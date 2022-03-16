@@ -1,0 +1,87 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="git">git</h1>
+<p>13/02/2022</p>
+<p>DVCS - distributed version control system</p>
+<h2 id="motivation">Motivation</h2>
+<h3 id="accessibility">Accessibility</h3>
+<ul>
+<li>access your files from everywhere (<code>github</code>)</li>
+<li>use several computers for work (laptop, desktop, work computer, etc...)</li>
+</ul>
+<h3 id="cooperativity">Cooperativity</h3>
+<ul>
+<li>track individual changes of different users on particular files</li>
+<li>offline working possible (distributed!!), history is locally available</li>
+</ul>
+<h3 id="development">Development</h3>
+<ul>
+<li>programming is non-linear</li>
+<li>latest version is not necessary the most stable one </li>
+<li>new features often break existing functions</li>
+</ul>
+<h2 id="terminology">Terminology</h2>
+<ul>
+<li>repository [repo] </li>
+<li>local / remote</li>
+<li>workspace - staging area (index) - local repo - remote repo</li>
+<li><code>HEAD</code>  - indicator which version/state is your workspace currently on</li>
+</ul>
+<h2 id="workflow">Workflow</h2>
+<p>1) set up <code>git</code></p>
+<p><code>{git}
+   git config --global user.name "&lt;yourname&gt;"
+   git config --global user.email "&lt;youremail_git&gt;"</code></p>
+<ol>
+<li>Find SSH adress at github.com</li>
+</ol>
+<p><code>{git}
+   git clone &lt;SSH URL&gt;</code></p>
+<ol>
+<li>Create your branch</li>
+</ol>
+<p><code>{git}
+   git branch &lt;yourbranchname&gt;</code></p>
+<ol>
+<li>Switch to your branch</li>
+</ol>
+<p><code>{git}
+   git checkout &lt;yourbranchname&gt;</code></p>
+<ol>
+<li>Create file</li>
+</ol>
+<p><code>{shell}
+   touch text.txt</code></p>
+<ol>
+<li>Add file</li>
+</ol>
+<p><code>{git}
+   git add text.txt</code></p>
+<ol>
+<li>Commit file</li>
+</ol>
+<p><code>{git}
+   git commit -m "my first commit" text.txt</code></p>
+<ol>
+<li>Push branch to remote</li>
+</ol>
+<p><code>{git}
+   git push origin &lt;yourbranchname&gt;</code></p>
+<h2 id="commands">Commands</h2>
+<p><code>git clone &lt;url-repo&gt;</code>  - download remote repository      <br />
+        Use the <code>git@github.com:.....</code> adress for SSH
+<code>git status</code>  - show status of local repository
+<code>git add</code> <filename> - add files to staging area
+<code>git commit -m "..."</code> <filename>  -  save file with a short descriptive message ...
+<code>git push</code>  - send (push) commits to remote repository
+<code>git pull</code>  - load changes (commits) from remote repository
+<code>git checkout</code> <branch/commit>  - set workspace to specific state
+<code>git diff</code> <filename> - show differences of file 
+<code>git log</code>  - show list of commits</p>
+<h2 id="tools">Tools</h2>
+<ul>
+<li>work with git in your IDE (often included, e.g. VisualCode, PyCharm, Sublime, ...)</li>
+<li>GUI for git (all OS) <a href="https://gitahead.github.io/gitahead.com/">gitAhead</a></li>
+<li><a href="https://rogerdudler.github.io/git-guide/index.html">Nice tutorial</a></li>
+<li><a href="https://docs.github.com/en/enterprise-server@3.0/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">SSH tutorial</a></li>
+</ul>
+</body></html>

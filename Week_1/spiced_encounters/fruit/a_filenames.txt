@@ -1,0 +1,7 @@
+a_filenames.txt
+ananas.txt
+apple.txt
+banana.txt
+list_names.txt
+orange.txt
+strawberry.txt

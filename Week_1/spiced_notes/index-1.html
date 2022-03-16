@@ -1,0 +1,66 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="bash-command-line">Bash command line</h1>
+<p>15/02/2022</p>
+<h3 id="terminology">Terminology</h3>
+<ol>
+<li><strong>Terminal</strong>: Actual text I/O environment (GUI for console)</li>
+<li><strong>Console</strong>: Physical representation of terminal (Nintendo...)</li>
+<li><strong>Shell</strong>: Access to kernel, interprets user commands</li>
+<li><strong>Command Line</strong>: User input, right hand side of prompt</li>
+</ol>
+<p>Taken from <a href="https://www.geeksforgeeks.org/difference-between-terminal-console-shell-and-command-line/">here</a></p>
+<h3 id="shell">Shell</h3>
+<ul>
+<li><strong>Bash</strong> [Linux] (Bourne Again SHell) - newer version of Bourne shell (Thompson shell) </li>
+<li><strong>git bash</strong> [Win] - Bash emulator</li>
+<li><strong>zsh</strong> - newest bash (Kali linux, Mac)</li>
+<li><strong>cmd</strong> / <strong>PowerShell</strong> [Win]- Windows shell, PowerShell better for scripting</li>
+</ul>
+<h3 id="why-a-cli">Why a CLI?</h3>
+<ul>
+<li>Less resources required</li>
+<li>Faster</li>
+<li>Automation</li>
+<li>Customization</li>
+<li>No GUI anyway</li>
+</ul>
+<h3 id="control">Control</h3>
+<ul>
+<li><code>&lt;TAB&gt;</code> - auto-complete (show valid commands)</li>
+<li><code>&lt;up&gt;</code> and <code>&lt;down&gt;</code> - show last commands</li>
+<li><code>.</code> - here</li>
+<li><code>..</code> - parent folder</li>
+<li><code>~</code> - home</li>
+<li><code>&lt;ctrl&gt; + &lt;c&gt;</code> - stop current process</li>
+<li><code>&lt;ctrl&gt; + &lt;l&gt;</code>- erase and start new line (same as <code>clear</code>)</li>
+</ul>
+<h3 id="commands">Commands</h3>
+<ul>
+<li>
+<p>Moving
+    <code>cd &lt;foldername&gt;</code> - change directory to <foldername>
+    <code>pwd</code> - print working directory
+    <code>ls</code>  - list files and directories (<code>dir</code> in cmd / PowerShell)</p>
+</li>
+<li>
+<p>File handling
+    <code>cp &lt;source&gt; &lt;target&gt;</code> - copy file/folder</p>
+<p><code>mv &lt;source&gt; &lt;target&gt;</code> - move file/folder</p>
+<p><code>rm &lt;target&gt;</code> - remove file/folder
+<code>mkdir &lt;foldername&gt;</code> - create folder</p>
+<p><code>touch &lt;filename&gt;</code> - create empty file</p>
+</li>
+<li>
+<p>Read
+    <code>less</code>, <code>cat</code>, <code>head</code>, <code>tail</code> - show content of text file </p>
+</li>
+</ul>
+<h3 id="bonus">BONUS</h3>
+<ul>
+<li><code>man &lt;command&gt;</code> - documentation of command</li>
+<li><code>alias &lt;alias&gt;="&lt;command&gt;"</code> - create alternative command</li>
+<li><code>~/.bashrc</code> - configuration file to customize shell [GNU/Linux]</li>
+<li><code>vim</code> and <code>nano</code> - text editors</li>
+<li><code>*</code> and <code>.</code> - wildcards meaning <strong>anything</strong> (*) or <strong>one arbitrary character</strong> (.) </li>
+</ul>
+</body></html>

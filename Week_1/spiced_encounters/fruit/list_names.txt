@@ -1,0 +1,8 @@
+ananas.txt
+apple.txt
+banana.txt
+list_names.txt
+olives.txt
+orange.txt
+oregon.txt
+strawbery.txt
