@@ -10,7 +10,7 @@ converts a numerical column to a matrix of binary variables
    (in Jupyter, split it into multiple cells)
 
 2. Understand what is happening
-   QUESTION: How does changing 'n_bins' affect the model?
+   QUESTION: How does changing 'n_bins' affect the model?v
 
 3. Explain to the rest of the group what you did
 """

@@ -30,14 +30,14 @@ cols.head()
 # cols.shape
 
 #%% transform a categorical column
-ohc = OneHotEncoder(sparse=False, handle_unknown='ignore')
+ohc = OneHotEncoder(sparse=False, handle_unknown='ignore') # instantiating the model
 ohc.fit(cols)            # learn the classes
 t = ohc.transform(cols)  # result is a numpy array
 t[:5]
 # t.shape
 
 #%% format output as a DataFame
-species = pd.DataFrame(t, columns=ohc.get_feature_names())
+species = pd.DataFrame(t, columns=ohc.get_feature_names()) # it will give names to the new features instead of asigning 0, 1, 2, 3
 species.head()
 
 
