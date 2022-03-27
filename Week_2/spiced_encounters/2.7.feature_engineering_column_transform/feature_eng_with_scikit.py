@@ -25,7 +25,7 @@ import os
 print(os.getcwd())
 
 # load data
-df = pd.read_csv('spiced_encounters/2.7.FeatureEngineeringwithColumnTransform/train.csv', index_col=0)
+df = pd.read_csv('train.csv', index_col=0)
 del df['Ticket']
 del df['Cabin']
 
