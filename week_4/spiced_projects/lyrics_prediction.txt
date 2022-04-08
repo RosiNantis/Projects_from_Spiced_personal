@@ -23,20 +23,20 @@ y_train=y_train.astype(int)
 def Countvect_fit_transf(trainX, trainY): # sample is the df.song_lyric[:2]
     vectorizer = TfidfVectorizer(stop_words='english',ngram_range=(1, 3))
     X = vectorizer.fit_transform(trainX.apply(lambda x: np.str_(x)))    
-    X_cv= pd.DataFrame(X.todense(), columns=vectorizer.get_feature_names(),index = trainY)
+    X_cv= pd.DataFrame(X.todense(), columns=vectorizer.get_feature_names_out(),index = trainY)
 
 
     return X_cv , vectorizer
 
 def Countvect_transf(testX, testY, self_vectorizer): # sample is the df.song_lyric[:2]
     X = self_vectorizer.transform(testX.apply(lambda x: np.str_(x)))    
-    X_cv= pd.DataFrame(X.todense(), columns=vectorizer.get_feature_names(),index = testY)
+    X_cv= pd.DataFrame(X.todense(), columns=vectorizer.get_feature_names_out(),index = testY)
 
     return X_cv
 
 def Countvect_transf_input(inputX, self_vectorizer): # sample is the df.song_lyric[:2]
     X = self_vectorizer.transform([inputX])    
-    X_cv= pd.DataFrame(X.todense(), columns=vectorizer.get_feature_names())
+    X_cv= pd.DataFrame(X.todense(), columns=vectorizer.get_feature_names_out())
 
     return X_cv
 
@@ -85,5 +85,6 @@ def pipe_line(model,frame_cv_train, y_train,frame_cv_test, y_test,frame_cv_input
     else:
         print('That is not a valid name_model!! Try between \'LogisticRegression\', \'RandomForest\' and \'NEW\'.')
 
-input_model = str(input('Give me which model I should use between \'LogisticRegression\', \'RandomForest\' and \'NEW\'.'))
-train_accuracy, test_accuracy, ypred, lr, ac = pipe_line(input_model,frame_cv_train, y_train,frame_cv_test, y_test,frame_cv_input)  
+input_model = str(input('Give me which model I should use between \'LogisticRegression\', \'RandomForest\' and \'NEW\'   :    '))
+pipe_line(input_model,frame_cv_train, y_train,frame_cv_test, y_test,frame_cv_input,input_lyr)  
+ 
