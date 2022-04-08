@@ -49,6 +49,7 @@ frame_cv_train.shape, frame_cv_test.shape, frame_cv_input.shape, y_test.shape, y
 
 #########        model_training      ########
 
+
 def pipe_line(model,frame_cv_train, y_train,frame_cv_test, y_test,frame_cv_input,input_lyr):
     if model == 'LogisticRegression':
         pipe = Pipeline([('LogisticRegression', LogisticRegression(class_weight='balanced_subsample'))])
@@ -65,7 +66,7 @@ def pipe_line(model,frame_cv_train, y_train,frame_cv_test, y_test,frame_cv_input
     elif model == 'RandomForest':
         pipe = Pipeline([('RandomForest', RandomForestClassifier(max_depth=3, n_estimators=10, random_state=42, class_weight='balanced'))])
         parameter_grid = {
-                        'max_depth' : [2,3,4,5,6]
+                        'RandomForest__max_depth' : [2,3,4,5,6]
                         }
         gridsearch = GridSearchCV(pipe, 
                           parameter_grid, 
@@ -74,7 +75,7 @@ def pipe_line(model,frame_cv_train, y_train,frame_cv_test, y_test,frame_cv_input
         gridsearch.fit(frame_cv_train, y_train)
         gridsearch.best_estimator_.score(frame_cv_test, y_test)
         ypred = gridsearch.best_estimator_.predict(frame_cv_test)
-        ac = accuracy_score(frame_cv_test, y_test)
+        accuracy_score(ypred, y_test)
         prediction = ypred[0]
         if prediction == 0:
             name = 'Bob_Dylan'
@@ -83,7 +84,6 @@ def pipe_line(model,frame_cv_train, y_train,frame_cv_test, y_test,frame_cv_input
         print(f'The model gives that the \'{input_lyr}\' was said by {name}, with accuracy = {round(accuracy_score(ypred, y_test),2)*100}%.')
     else:
         print('That is not a valid name_model!! Try between \'LogisticRegression\', \'RandomForest\' and \'NEW\'.')
-    return train_accuracy, test_accuracy, ypred ,lr, ac
 
 input_model = str(input('Give me which model I should use between \'LogisticRegression\', \'RandomForest\' and \'NEW\'.'))
 train_accuracy, test_accuracy, ypred, lr, ac = pipe_line(input_model,frame_cv_train, y_train,frame_cv_test, y_test,frame_cv_input)  
