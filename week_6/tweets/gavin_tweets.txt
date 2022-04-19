@@ -1,0 +1,724 @@
+
+
+@kusamanetwork ? https://t.co/8bK9mziXrF
+
+RT @Tether_to: #Tether USDt launches on @kusamanetwork
+Read more here: https://t.co/b2h3THRNbU
+ https://t.co/BtJTpzO3oH
+
+Power to the builders ✊💪 Perhaps in the near future the new primitives for @Polkadot governance can be used here too.. https://t.co/CxEhUjAXua
+
+RT @DonnieBigBags: Community call will happen on the @MoonsamaNFT discord today at 4pm UTC: https://t.co/xrI3KCoQh6
+
+But it will also happe…
+
+A nice writeup of @polkadot's/@kusamanetwork's XCMv2 by @quarkslab now published at https://t.co/iOpaOeKOFv Look out for another one on the upcoming XCMv3...
+
+RT @alexeiZamyatin: Finally, it's live. 
+
+You can now mint trustless $kBTC on @KaruraNetwork and use it on @MoonriverNW and @KaruraNetwork…
+
+Thanks for being a great audience @seederyio! Sorry I couldn’t stay longer, but it has been a long, foodless day and curry called :)
+
+@Polkadot's XCMv3 now up for review and security audit. https://t.co/fDeiWk1tnY Watch out for the explainer article in the coming days...
+
+RT @KevinRothrock: This woman may have single-handedly given Russia’s antiwar movement the simplest, most unassailable protest symbol imagi…
+
+RT @KyivIndependent: ⚡️SBU: Intercepted phone calls shows that Russian troops near Kharkiv were ordered to shoot at civilians, including ch…
+
+RT @rphmeier: And they don't just get security, but also the cheapest, safest, fastest bridges you can find. To every other parachain. Did…
+
+RT @rphmeier: Combating a common misconception that parachains have to pay 'rent' to Polkadot. No, they pay for _security_ in the same way…
+
+RT @rphmeier: Everyone, please welcome the LP7 cohort to Polkadot. Congratulations on the launch! https://t.co/kX6diyluBY
+
+RT @rphmeier: Nuclear explosions amounting to 5000 megatons anywhere in the world is enough to plunge us into a 10 year nuclear winter whic…
+
+@Ukraine https://t.co/bFyYkKDseL
+
+RT @Ukraine: The people of Ukraine are grateful for the support and donations from the global crypto community as we protect our freedom. W…
+
+RT @stephenWalt: I am reminded of Sun Tzu's dictum that one should "build a golden bridge for your enemy to retreat across." Unity, resolut…
+
+RT @kianenigma: Parity staking miners have been serving DOT/KSM networks with NPoS computation, earning a small reward in return. These rew…
+
+RT @tomrobin: A few minutes ago someone donated $1 million to the Ukraine government, in a single Bitcoin transaction
+https://t.co/t9R5KMKw…
+
+@Ukraine If you post a DOT address I'll personally contribute $5m.
+
+The mostly Ukraine-based @Subsocial team have been building donation functionality into their platform for @Polkadot/@kusamanetwork tokens. Just goes into a wallet controlled by Subsocial currently, but a less trust-bound solution on its way...💙💛 https://t.co/Dy51wWfwvV
+
+RT @Conflicts: BREAKING: Ukraine's Zelensky asks UN to strip Russia of its Security Council vote - @AFP
+
+RT @NickKnudsenUS: Zelensky drinking coffee and chatting with his fellow Kyiv defenders this morning.
+
+Imagine what a moral boost it must b…
+
+RT @samberkhead: And please don’t rush to demonize the Russian people, who had absolutely no say in whether their country went to war.
+
+RT @RoryStewartUK: Russia should be expelled from the Council of Europe immediately.
+
+RT @lgparfenov: ЭТО НЕ УЖАСНЫЙ КОНЕЦ, ЭТО УЖАС БЕЗ КОНЦА
+
+Вчерашний день в Екатеринбурге запомню как последний мирный. К прежней жизни не б…
+
+RT @RoryStewartUK: All NATO and EU countries - at the very least - and ideally many more democracies around the world from India to Brazil…
+
+RT @cryptonewscn: @gear_techs supports parallel execution of different transactions and asynchronization of smart contract programming and…
+
+RT @JacquiHeinrich: Ukrainian MP Alexey Goncharenko on Fox News: Ukraine is the only nation in the human history which gave up the nuclear…
+
+RT @VitalikButerin: Очень расстроен решением Путина отказаться от возможности мирного решения спора с Украиной и вместо этого начать войну.…
+
+RT @rphmeier: More future scaling plans: https://t.co/k9mwIF1lVQ
+
+a proposal for handling parachain blocks _faster_ than relay-chain blocks…
+
+With https://t.co/PEkmF5SvzZ @Polkadot &amp; @kusamanetwork will have support for NFTs in XCMv3, including the ability to teleport them and even have chains which can be permissionlessly used host NFTs native to chain in the XCM universe as reserve-backed assets.
+
+RT @PolkadotPM: What an large, organic community you have built there Sqlana! https://t.co/gqJRPbq9CO
+
+RT @AcalaNetwork: Announcing the launch of $aUSD, Acala's decentralized, multi-collateral stablecoin 🎊
+
+aUSD is the core of Acala’s DeFi ec…
+
+Cute visualisation of @kusamanetwork 's validators producing blocks https://t.co/vDT2EuGJPq
+
+Saw this and thought of you @kusamanetwork https://t.co/CWLRe0TD3i
+
+RT @rphmeier: Friendly reminder that Polkadot is a build-your-own-rollup protocol with shared security, automatic upgrades, and fast finali…
+
+New primitives for building @Polkadot &amp; @kusamanetwork's next-generation governance system are merged! https://t.co/PUYbeCQ9rd
+
+Congrats to @polkascan with their new, rather slick, UI https://t.co/p1n7GSpzE1
+
+RT @Polkadot: Polkadot has the smallest carbon footprint, crypto research says:
+
+XCM-over-bridges PR is nearly ready, meaning parachains under @Polkadot will be able to send XCM effortlessly not just to each other, but also to parachains on @kusamanetwork, trivialising the transfer of tokens/NFTs, the use of certificates and much more https://t.co/d1aooCcYSN
+
+RT @rphmeier: 'Asynchronous Backing' is a set of optimizations for parachain consensus to increase the throughput of parachains substantial…
+
+RT @Justin_Bons: Cryptocurrency has followed a boom &amp; bust cycle so far
+
+I have been through 3 bear markets
+
+We need the other side of this…
+
+Centralisation will be the bane of western civilisations. https://t.co/T38LLH1gqH
+
+Just the tip of @Polkadot’s trust-free XCMP iceberg. https://t.co/USSfSsVbvU
+
+“If you find yourself seeking a sanctuary from the greed and the fray, it exists, and it's been here the whole time.” https://t.co/8XYgHHmGKE
+
+RT @MoonbeamNetwork: ⚡​ ONE MILLION TRANSACTIONS ⚡️
+Moonbeam hits 1M tx on the network! 🔥​ Moonbeam is lighting up @Polkadot’s ecosystem wi…
+
+RT @kianenigma: On that note, if you find yourself suited to be a runtime/FRAME developer, but you are particularly interested in working o…
+
+RT @shawntabrizi: The Polkadot Pioneers Prize
+
+"Challenge winners will receive DOT; the total prize funds available at program launch will…
+
+RT @hackernoon: "Polkadot Parachains will Lead to Best Practices for Cross-Consensus Communication" https://t.co/GbvzvToWnw #polkadot #dapps
+
+Interested in helping shape the next generation of @Polkadot technology? I'm now interviewing candidates to work with me doing research &amp; prototyping at @ParityTech. NTH: PhD-systems-DBs-GPU-crypto-p2p-OSS-10x-Rust-Rlang-economics.
+gavin@parity.io
+subject: I'm a Curious Coder
+
+RT @subscan_io: I just published New Updates for Subscan (2022-Jan-Part1) https://t.co/l1xbLqqrEq
+
+@rphmeier I like the idea of supporting projects on which we are dependent. But perhaps Firefox/Mozilla wouldn’t want the DOT anyway since they seem to be motivated to bow to ignorant online sentiment asserting that all crypto is bad for the environment.
+
+RT @NovaWalletApp: Are you ready for the DApp feature release in @NovaWalletApp ? 👀
+
+DApp browser provides unlimited possibilities for expl…
+
+RT @Nate_Ham1: Another first for @MoonriverNW , @MetaMask &amp; @kusamanetwork - native KSM being held in a Metamask wallet 🤯👀🤩 https://t.co/Fk…
+
+RT @rphmeier: Technically capable people who think big picture could tinker, trade, and script their way to 7 figure incomes the last few y…
+
+RT @edhesse79: Probably nothing 😳😳😳 https://t.co/4lwtxftWz5
+
+RT @Justin_Bons: 1/18) I do not support SOL, there are far too many red flags.
+
+Consistently displaying a pattern of bad behavior.
+
+Priorit…
+
+@Justin_Bons DOT is required by parachains in order to lease their slot. It is only through their slot that they get trust-free access to Polkadot’s state, become secure and can inter operate with other parachains/shards.
+
+New ecosystem developer analysis by @ElectricCapital shows @Polkadot literally in a class of its own with clearly the stongest developer growth since launch of any Web3 protocol and by far the biggest dev community outside of Ethereum. https://t.co/Tu6OQ7MMeX https://t.co/3X0qWzleYd
+
+RT @CoinDesk: With #Web3 now the center of a lively debate, it’s worth revisiting the following post, originally published in 2014 and now…
+
+@MessariCrypto @Polkadot @cosmos @solana @ethereum Number of contributions is a useless comparison as long as some projects (e.g. Polkadot) use squash commits and others (e.g. Geth) don’t. Squash commits can reduce the apparent number of contributions by multiple orders of magnitude. @MessariCrypto
+
+My usual annual writeup - just in time... https://t.co/gGe9Gn2ffH
+
+RT @Polkadot: .@substrate_io is in the commitment phase on 
+@StackExchange. Sign your name to help create a support site for building block…
+
+RT @Polkadot: Congratulations to @AstarNetwork on winning Polkadot's third auction! 
+
+Astar will be onboarded at block #8179200 [Dec. 18] a…
+
+RT @edhesse79: Adoption begins 😂 @kusamanetwork https://t.co/xPfcmSEIRx
+
+RT @BlockDownConf: Join famed privacy activist @Snowden &amp; @Polkadot's @gavofyork for an historic discussion on DeData tomorrow - you won't…
+
+RT @beeple: KUSAMA https://t.co/v8KJcKCySe
+
+RT @WIRED: Do you ever find yourself wondering, “What is Web3?” You’re not alone. https://t.co/4gltKMZkN2
+
+RT @shawntabrizi: The Substrate StackExchange is now in commitment phase. Please sign your name! https://t.co/AdAClWAq9b
+
+@ph_lux @q9fmz @shawntabrizi @BillLaboon If after xfer/loan an account holds less than 1 DOT (the Existential Deposit) will have its balance set to zero. Either way, when the crowdloan is over, any loaned amounts will be transferred back as expected. So either loan out the full balance or leave at least 1 DOT in there.
+
+The @Polkadot codebase is officially 4 years old today! https://t.co/dWB2VeTshS
+
+RT @Polkadot: The future of the Polkadot brand is in your hands. Cast your vote on the new brand identity and logo design until November 5t…
+
+RT @Polkadot: The vote on the future of the Polkadot brand is open until November 5th. Don’t miss your chance to take part in a historic mo…
+
+RT @NovaWalletApp: We are excited to announce that we are finishing the development of our first release of Nova Wallet - next gen applicat…
+
+RT @BillLaboon: THREAD - @Polkadot Digest 19 Oct 2021
+
+#Polkadot News
+
+Videos of Sub0 Online 2021 (hosted by yours truly) are now online. D…
+
+Quite possibly the first tightly-coupled cross-chain token application between @kusamanetwork parachains. @Polkadot https://t.co/FV65kahDrm
+
+@FractalFlows @Polkadot The DOT in the treasury comes as a natural part of the network protocol. Fees, slashes and suboptimal staking configurations are all contributing factors. If it goes unused, it slowly gets burned. It currently burns 239,988 DOT every month.
+
+The @Polkadot treasury currently has 18,936,300 DOT (DOT, not USD - do the math) in it ready to spend on *your* ideas for building, improving, educating and indeed, anything else that the Polkadot governance believes valuable.
+
+RT @substrate_io: The Substrate Developer Hub [https://t.co/teWiU7oXNQ] and https://t.co/wV6mdmsSCW just merged and got a complete revamp.…
+
+RT @Polkadot: Who doesn’t love gifts?!
+
+Sending DOT or KSM to friends &amp; family just got easier than ever🚀 With Polkadot &amp; @Kusamanetwork Gi…
+
+RT @rphmeier: Unlike L2 rollups, which require long fraud periods before settlement because being included on-chain is irreversible, @Polka…
+
+Whereas other chains take months or even years to deploy an upgrade, @Polkadot and @KusamaNetwork created, voted and deployed new logic on to the chain within 8 hours. All going through a secure, stakeholder-governed decentralized process. https://t.co/zEw0BWIhX5
+
+RT @ParityTech: Want to build the future of #blockchain and #Web3? Parity is seeking out the world's best developers, marketing &amp; comms spe…
+
+RT @SubsocialChain: Multiple centralized services such as @Facebook and @instagram are down right now. Decentralization can help to prevent…
+
+Kudos to @facebook for giving us a very real demonstration of why the move to a decentralised Web 3 is necessary and, indeed, inevitable.
+
+RT @ProfFeynman: Don't pay attention to "authorities" think for yourself.
+
+Some great work by team RMRK integrating @kusamanetwork's Statemine Uniques pallet. Looking forward to the next-generation of Singular. https://t.co/qeqfY8oGwV @Polkadot
+
+@berlin_riq Thanks for the offer - too short notice this time though. Maybe next...
+
+My new favourite track La Clé Des Champs, by my new favourite DJ NTO: https://t.co/rUlegRnOy3
+
+Part III of my series on @polkadot's XCM is out (this time on execution and error management). https://t.co/pP6X8CyECT
+
+RT @kusamanetwork: Welcome to the cₕₐₒₛ @altair_network!
+
+After winning the 9th parachain auction, Altair is now being onboarded as my 10th…
+
+RT @BitDotCountry: 👀👀Shannon - CTO &amp; Gardi - Partnership will be sharing about what https://t.co/8RVcJDf7pY Metaverse is and how it works w…
+
+Moonriver one of several chains helping @Polkadot and @kusamanetwork demonstrate the power of an L0 multi-chain meta-protocol. https://t.co/fHGfVpzxfK
+
+Congratulations to @Polkadot and @kusamanetwork's very own Qinwen for her inclusion in the China Forbes 30 under 30 for Fashion and Arts: https://t.co/vDfeGjnmZE - Well deserved 👏
+
+RT @arringtonXRPcap: We just published “The League of Parachains: Polkadot”, a report on the technical and philosophical foundations of @Po…
+
+RT @XiliangChen: 1/ One of the biggest Substrate developer experience improvement PR is just merged, closed an issue raised almost 3 years…
+
+Part 2 of my @Polkadot XCM article series is now out. This covers XCM versioning and upgradability. Get it here: https://t.co/tNWVljXR3T @kusamanetwork
+
+RT @rphmeier: If you want to work on security-first, practical blockchain protocol design and implementation on @Polkadot at @ParityTech, D…
+
+@notme1713 @DonnieBigBags @crypto_n_cut Quite.
+
+@kusamanetwork ? https://t.co/8bK9mziXrF
+
+RT @Tether_to: #Tether USDt launches on @kusamanetwork
+Read more here: https://t.co/b2h3THRNbU
+ https://t.co/BtJTpzO3oH
+
+Power to the builders ✊💪 Perhaps in the near future the new primitives for @Polkadot governance can be used here too.. https://t.co/CxEhUjAXua
+
+RT @DonnieBigBags: Community call will happen on the @MoonsamaNFT discord today at 4pm UTC: https://t.co/xrI3KCoQh6
+
+But it will also happe…
+
+A nice writeup of @polkadot's/@kusamanetwork's XCMv2 by @quarkslab now published at https://t.co/iOpaOeKOFv Look out for another one on the upcoming XCMv3...
+
+RT @alexeiZamyatin: Finally, it's live. 
+
+You can now mint trustless $kBTC on @KaruraNetwork and use it on @MoonriverNW and @KaruraNetwork…
+
+Thanks for being a great audience @seederyio! Sorry I couldn’t stay longer, but it has been a long, foodless day and curry called :)
+
+@Polkadot's XCMv3 now up for review and security audit. https://t.co/fDeiWk1tnY Watch out for the explainer article in the coming days...
+
+RT @KevinRothrock: This woman may have single-handedly given Russia’s antiwar movement the simplest, most unassailable protest symbol imagi…
+
+RT @KyivIndependent: ⚡️SBU: Intercepted phone calls shows that Russian troops near Kharkiv were ordered to shoot at civilians, including ch…
+
+RT @rphmeier: And they don't just get security, but also the cheapest, safest, fastest bridges you can find. To every other parachain. Did…
+
+RT @rphmeier: Combating a common misconception that parachains have to pay 'rent' to Polkadot. No, they pay for _security_ in the same way…
+
+RT @rphmeier: Everyone, please welcome the LP7 cohort to Polkadot. Congratulations on the launch! https://t.co/kX6diyluBY
+
+RT @rphmeier: Nuclear explosions amounting to 5000 megatons anywhere in the world is enough to plunge us into a 10 year nuclear winter whic…
+
+@Ukraine https://t.co/bFyYkKDseL
+
+RT @Ukraine: The people of Ukraine are grateful for the support and donations from the global crypto community as we protect our freedom. W…
+
+RT @stephenWalt: I am reminded of Sun Tzu's dictum that one should "build a golden bridge for your enemy to retreat across." Unity, resolut…
+
+RT @kianenigma: Parity staking miners have been serving DOT/KSM networks with NPoS computation, earning a small reward in return. These rew…
+
+RT @tomrobin: A few minutes ago someone donated $1 million to the Ukraine government, in a single Bitcoin transaction
+https://t.co/t9R5KMKw…
+
+@Ukraine If you post a DOT address I'll personally contribute $5m.
+
+The mostly Ukraine-based @Subsocial team have been building donation functionality into their platform for @Polkadot/@kusamanetwork tokens. Just goes into a wallet controlled by Subsocial currently, but a less trust-bound solution on its way...💙💛 https://t.co/Dy51wWfwvV
+
+RT @Conflicts: BREAKING: Ukraine's Zelensky asks UN to strip Russia of its Security Council vote - @AFP
+
+RT @NickKnudsenUS: Zelensky drinking coffee and chatting with his fellow Kyiv defenders this morning.
+
+Imagine what a moral boost it must b…
+
+RT @samberkhead: And please don’t rush to demonize the Russian people, who had absolutely no say in whether their country went to war.
+
+RT @RoryStewartUK: Russia should be expelled from the Council of Europe immediately.
+
+RT @lgparfenov: ЭТО НЕ УЖАСНЫЙ КОНЕЦ, ЭТО УЖАС БЕЗ КОНЦА
+
+Вчерашний день в Екатеринбурге запомню как последний мирный. К прежней жизни не б…
+
+RT @RoryStewartUK: All NATO and EU countries - at the very least - and ideally many more democracies around the world from India to Brazil…
+
+RT @cryptonewscn: @gear_techs supports parallel execution of different transactions and asynchronization of smart contract programming and…
+
+RT @JacquiHeinrich: Ukrainian MP Alexey Goncharenko on Fox News: Ukraine is the only nation in the human history which gave up the nuclear…
+
+RT @VitalikButerin: Очень расстроен решением Путина отказаться от возможности мирного решения спора с Украиной и вместо этого начать войну.…
+
+RT @rphmeier: More future scaling plans: https://t.co/k9mwIF1lVQ
+
+a proposal for handling parachain blocks _faster_ than relay-chain blocks…
+
+With https://t.co/PEkmF5SvzZ @Polkadot &amp; @kusamanetwork will have support for NFTs in XCMv3, including the ability to teleport them and even have chains which can be permissionlessly used host NFTs native to chain in the XCM universe as reserve-backed assets.
+
+RT @PolkadotPM: What an large, organic community you have built there Sqlana! https://t.co/gqJRPbq9CO
+
+RT @AcalaNetwork: Announcing the launch of $aUSD, Acala's decentralized, multi-collateral stablecoin 🎊
+
+aUSD is the core of Acala’s DeFi ec…
+
+Cute visualisation of @kusamanetwork 's validators producing blocks https://t.co/vDT2EuGJPq
+
+Saw this and thought of you @kusamanetwork https://t.co/CWLRe0TD3i
+
+RT @rphmeier: Friendly reminder that Polkadot is a build-your-own-rollup protocol with shared security, automatic upgrades, and fast finali…
+
+New primitives for building @Polkadot &amp; @kusamanetwork's next-generation governance system are merged! https://t.co/PUYbeCQ9rd
+
+Congrats to @polkascan with their new, rather slick, UI https://t.co/p1n7GSpzE1
+
+RT @Polkadot: Polkadot has the smallest carbon footprint, crypto research says:
+
+XCM-over-bridges PR is nearly ready, meaning parachains under @Polkadot will be able to send XCM effortlessly not just to each other, but also to parachains on @kusamanetwork, trivialising the transfer of tokens/NFTs, the use of certificates and much more https://t.co/d1aooCcYSN
+
+RT @rphmeier: 'Asynchronous Backing' is a set of optimizations for parachain consensus to increase the throughput of parachains substantial…
+
+RT @Justin_Bons: Cryptocurrency has followed a boom &amp; bust cycle so far
+
+I have been through 3 bear markets
+
+We need the other side of this…
+
+Centralisation will be the bane of western civilisations. https://t.co/T38LLH1gqH
+
+Just the tip of @Polkadot’s trust-free XCMP iceberg. https://t.co/USSfSsVbvU
+
+“If you find yourself seeking a sanctuary from the greed and the fray, it exists, and it's been here the whole time.” https://t.co/8XYgHHmGKE
+
+RT @MoonbeamNetwork: ⚡​ ONE MILLION TRANSACTIONS ⚡️
+Moonbeam hits 1M tx on the network! 🔥​ Moonbeam is lighting up @Polkadot’s ecosystem wi…
+
+RT @kianenigma: On that note, if you find yourself suited to be a runtime/FRAME developer, but you are particularly interested in working o…
+
+RT @shawntabrizi: The Polkadot Pioneers Prize
+
+"Challenge winners will receive DOT; the total prize funds available at program launch will…
+
+RT @hackernoon: "Polkadot Parachains will Lead to Best Practices for Cross-Consensus Communication" https://t.co/GbvzvToWnw #polkadot #dapps
+
+Interested in helping shape the next generation of @Polkadot technology? I'm now interviewing candidates to work with me doing research &amp; prototyping at @ParityTech. NTH: PhD-systems-DBs-GPU-crypto-p2p-OSS-10x-Rust-Rlang-economics.
+gavin@parity.io
+subject: I'm a Curious Coder
+
+RT @subscan_io: I just published New Updates for Subscan (2022-Jan-Part1) https://t.co/l1xbLqqrEq
+
+@rphmeier I like the idea of supporting projects on which we are dependent. But perhaps Firefox/Mozilla wouldn’t want the DOT anyway since they seem to be motivated to bow to ignorant online sentiment asserting that all crypto is bad for the environment.
+
+RT @NovaWalletApp: Are you ready for the DApp feature release in @NovaWalletApp ? 👀
+
+DApp browser provides unlimited possibilities for expl…
+
+RT @Nate_Ham1: Another first for @MoonriverNW , @MetaMask &amp; @kusamanetwork - native KSM being held in a Metamask wallet 🤯👀🤩 https://t.co/Fk…
+
+RT @rphmeier: Technically capable people who think big picture could tinker, trade, and script their way to 7 figure incomes the last few y…
+
+RT @edhesse79: Probably nothing 😳😳😳 https://t.co/4lwtxftWz5
+
+RT @Justin_Bons: 1/18) I do not support SOL, there are far too many red flags.
+
+Consistently displaying a pattern of bad behavior.
+
+Priorit…
+
+@Justin_Bons DOT is required by parachains in order to lease their slot. It is only through their slot that they get trust-free access to Polkadot’s state, become secure and can inter operate with other parachains/shards.
+
+New ecosystem developer analysis by @ElectricCapital shows @Polkadot literally in a class of its own with clearly the stongest developer growth since launch of any Web3 protocol and by far the biggest dev community outside of Ethereum. https://t.co/Tu6OQ7MMeX https://t.co/3X0qWzleYd
+
+RT @CoinDesk: With #Web3 now the center of a lively debate, it’s worth revisiting the following post, originally published in 2014 and now…
+
+@MessariCrypto @Polkadot @cosmos @solana @ethereum Number of contributions is a useless comparison as long as some projects (e.g. Polkadot) use squash commits and others (e.g. Geth) don’t. Squash commits can reduce the apparent number of contributions by multiple orders of magnitude. @MessariCrypto
+
+My usual annual writeup - just in time... https://t.co/gGe9Gn2ffH
+
+RT @Polkadot: .@substrate_io is in the commitment phase on 
+@StackExchange. Sign your name to help create a support site for building block…
+
+RT @Polkadot: Congratulations to @AstarNetwork on winning Polkadot's third auction! 
+
+Astar will be onboarded at block #8179200 [Dec. 18] a…
+
+RT @edhesse79: Adoption begins 😂 @kusamanetwork https://t.co/xPfcmSEIRx
+
+RT @BlockDownConf: Join famed privacy activist @Snowden &amp; @Polkadot's @gavofyork for an historic discussion on DeData tomorrow - you won't…
+
+RT @beeple: KUSAMA https://t.co/v8KJcKCySe
+
+RT @WIRED: Do you ever find yourself wondering, “What is Web3?” You’re not alone. https://t.co/4gltKMZkN2
+
+RT @shawntabrizi: The Substrate StackExchange is now in commitment phase. Please sign your name! https://t.co/AdAClWAq9b
+
+@ph_lux @q9fmz @shawntabrizi @BillLaboon If after xfer/loan an account holds less than 1 DOT (the Existential Deposit) will have its balance set to zero. Either way, when the crowdloan is over, any loaned amounts will be transferred back as expected. So either loan out the full balance or leave at least 1 DOT in there.
+
+The @Polkadot codebase is officially 4 years old today! https://t.co/dWB2VeTshS
+
+RT @Polkadot: The future of the Polkadot brand is in your hands. Cast your vote on the new brand identity and logo design until November 5t…
+
+RT @Polkadot: The vote on the future of the Polkadot brand is open until November 5th. Don’t miss your chance to take part in a historic mo…
+
+RT @NovaWalletApp: We are excited to announce that we are finishing the development of our first release of Nova Wallet - next gen applicat…
+
+RT @BillLaboon: THREAD - @Polkadot Digest 19 Oct 2021
+
+#Polkadot News
+
+Videos of Sub0 Online 2021 (hosted by yours truly) are now online. D…
+
+Quite possibly the first tightly-coupled cross-chain token application between @kusamanetwork parachains. @Polkadot https://t.co/FV65kahDrm
+
+@FractalFlows @Polkadot The DOT in the treasury comes as a natural part of the network protocol. Fees, slashes and suboptimal staking configurations are all contributing factors. If it goes unused, it slowly gets burned. It currently burns 239,988 DOT every month.
+
+The @Polkadot treasury currently has 18,936,300 DOT (DOT, not USD - do the math) in it ready to spend on *your* ideas for building, improving, educating and indeed, anything else that the Polkadot governance believes valuable.
+
+RT @substrate_io: The Substrate Developer Hub [https://t.co/teWiU7oXNQ] and https://t.co/wV6mdmsSCW just merged and got a complete revamp.…
+
+RT @Polkadot: Who doesn’t love gifts?!
+
+Sending DOT or KSM to friends &amp; family just got easier than ever🚀 With Polkadot &amp; @Kusamanetwork Gi…
+
+RT @rphmeier: Unlike L2 rollups, which require long fraud periods before settlement because being included on-chain is irreversible, @Polka…
+
+Whereas other chains take months or even years to deploy an upgrade, @Polkadot and @KusamaNetwork created, voted and deployed new logic on to the chain within 8 hours. All going through a secure, stakeholder-governed decentralized process. https://t.co/zEw0BWIhX5
+
+RT @ParityTech: Want to build the future of #blockchain and #Web3? Parity is seeking out the world's best developers, marketing &amp; comms spe…
+
+RT @SubsocialChain: Multiple centralized services such as @Facebook and @instagram are down right now. Decentralization can help to prevent…
+
+Kudos to @facebook for giving us a very real demonstration of why the move to a decentralised Web 3 is necessary and, indeed, inevitable.
+
+RT @ProfFeynman: Don't pay attention to "authorities" think for yourself.
+
+Some great work by team RMRK integrating @kusamanetwork's Statemine Uniques pallet. Looking forward to the next-generation of Singular. https://t.co/qeqfY8oGwV @Polkadot
+
+@berlin_riq Thanks for the offer - too short notice this time though. Maybe next...
+
+My new favourite track La Clé Des Champs, by my new favourite DJ NTO: https://t.co/rUlegRnOy3
+
+Part III of my series on @polkadot's XCM is out (this time on execution and error management). https://t.co/pP6X8CyECT
+
+RT @kusamanetwork: Welcome to the cₕₐₒₛ @altair_network!
+
+After winning the 9th parachain auction, Altair is now being onboarded as my 10th…
+
+RT @BitDotCountry: 👀👀Shannon - CTO &amp; Gardi - Partnership will be sharing about what https://t.co/8RVcJDf7pY Metaverse is and how it works w…
+
+Moonriver one of several chains helping @Polkadot and @kusamanetwork demonstrate the power of an L0 multi-chain meta-protocol. https://t.co/fHGfVpzxfK
+
+Congratulations to @Polkadot and @kusamanetwork's very own Qinwen for her inclusion in the China Forbes 30 under 30 for Fashion and Arts: https://t.co/vDfeGjnmZE - Well deserved 👏
+
+RT @arringtonXRPcap: We just published “The League of Parachains: Polkadot”, a report on the technical and philosophical foundations of @Po…
+
+RT @XiliangChen: 1/ One of the biggest Substrate developer experience improvement PR is just merged, closed an issue raised almost 3 years…
+
+Part 2 of my @Polkadot XCM article series is now out. This covers XCM versioning and upgradability. Get it here: https://t.co/tNWVljXR3T @kusamanetwork
+
+RT @rphmeier: If you want to work on security-first, practical blockchain protocol design and implementation on @Polkadot at @ParityTech, D…
+
+@notme1713 @DonnieBigBags @crypto_n_cut Quite.
+
+@kusamanetwork ? https://t.co/8bK9mziXrF
+
+RT @Tether_to: #Tether USDt launches on @kusamanetwork
+Read more here: https://t.co/b2h3THRNbU
+ https://t.co/BtJTpzO3oH
+
+Power to the builders ✊💪 Perhaps in the near future the new primitives for @Polkadot governance can be used here too.. https://t.co/CxEhUjAXua
+
+RT @DonnieBigBags: Community call will happen on the @MoonsamaNFT discord today at 4pm UTC: https://t.co/xrI3KCoQh6
+
+But it will also happe…
+
+A nice writeup of @polkadot's/@kusamanetwork's XCMv2 by @quarkslab now published at https://t.co/iOpaOeKOFv Look out for another one on the upcoming XCMv3...
+
+RT @alexeiZamyatin: Finally, it's live. 
+
+You can now mint trustless $kBTC on @KaruraNetwork and use it on @MoonriverNW and @KaruraNetwork…
+
+Thanks for being a great audience @seederyio! Sorry I couldn’t stay longer, but it has been a long, foodless day and curry called :)
+
+@Polkadot's XCMv3 now up for review and security audit. https://t.co/fDeiWk1tnY Watch out for the explainer article in the coming days...
+
+RT @KevinRothrock: This woman may have single-handedly given Russia’s antiwar movement the simplest, most unassailable protest symbol imagi…
+
+RT @KyivIndependent: ⚡️SBU: Intercepted phone calls shows that Russian troops near Kharkiv were ordered to shoot at civilians, including ch…
+
+RT @rphmeier: And they don't just get security, but also the cheapest, safest, fastest bridges you can find. To every other parachain. Did…
+
+RT @rphmeier: Combating a common misconception that parachains have to pay 'rent' to Polkadot. No, they pay for _security_ in the same way…
+
+RT @rphmeier: Everyone, please welcome the LP7 cohort to Polkadot. Congratulations on the launch! https://t.co/kX6diyluBY
+
+RT @rphmeier: Nuclear explosions amounting to 5000 megatons anywhere in the world is enough to plunge us into a 10 year nuclear winter whic…
+
+@Ukraine https://t.co/bFyYkKDseL
+
+RT @Ukraine: The people of Ukraine are grateful for the support and donations from the global crypto community as we protect our freedom. W…
+
+RT @stephenWalt: I am reminded of Sun Tzu's dictum that one should "build a golden bridge for your enemy to retreat across." Unity, resolut…
+
+RT @kianenigma: Parity staking miners have been serving DOT/KSM networks with NPoS computation, earning a small reward in return. These rew…
+
+RT @tomrobin: A few minutes ago someone donated $1 million to the Ukraine government, in a single Bitcoin transaction
+https://t.co/t9R5KMKw…
+
+@Ukraine If you post a DOT address I'll personally contribute $5m.
+
+The mostly Ukraine-based @Subsocial team have been building donation functionality into their platform for @Polkadot/@kusamanetwork tokens. Just goes into a wallet controlled by Subsocial currently, but a less trust-bound solution on its way...💙💛 https://t.co/Dy51wWfwvV
+
+RT @Conflicts: BREAKING: Ukraine's Zelensky asks UN to strip Russia of its Security Council vote - @AFP
+
+RT @NickKnudsenUS: Zelensky drinking coffee and chatting with his fellow Kyiv defenders this morning.
+
+Imagine what a moral boost it must b…
+
+RT @samberkhead: And please don’t rush to demonize the Russian people, who had absolutely no say in whether their country went to war.
+
+RT @RoryStewartUK: Russia should be expelled from the Council of Europe immediately.
+
+RT @lgparfenov: ЭТО НЕ УЖАСНЫЙ КОНЕЦ, ЭТО УЖАС БЕЗ КОНЦА
+
+Вчерашний день в Екатеринбурге запомню как последний мирный. К прежней жизни не б…
+
+RT @RoryStewartUK: All NATO and EU countries - at the very least - and ideally many more democracies around the world from India to Brazil…
+
+RT @cryptonewscn: @gear_techs supports parallel execution of different transactions and asynchronization of smart contract programming and…
+
+RT @JacquiHeinrich: Ukrainian MP Alexey Goncharenko on Fox News: Ukraine is the only nation in the human history which gave up the nuclear…
+
+RT @VitalikButerin: Очень расстроен решением Путина отказаться от возможности мирного решения спора с Украиной и вместо этого начать войну.…
+
+RT @rphmeier: More future scaling plans: https://t.co/k9mwIF1lVQ
+
+a proposal for handling parachain blocks _faster_ than relay-chain blocks…
+
+With https://t.co/PEkmF5SvzZ @Polkadot &amp; @kusamanetwork will have support for NFTs in XCMv3, including the ability to teleport them and even have chains which can be permissionlessly used host NFTs native to chain in the XCM universe as reserve-backed assets.
+
+RT @PolkadotPM: What an large, organic community you have built there Sqlana! https://t.co/gqJRPbq9CO
+
+RT @AcalaNetwork: Announcing the launch of $aUSD, Acala's decentralized, multi-collateral stablecoin 🎊
+
+aUSD is the core of Acala’s DeFi ec…
+
+Cute visualisation of @kusamanetwork 's validators producing blocks https://t.co/vDT2EuGJPq
+
+Saw this and thought of you @kusamanetwork https://t.co/CWLRe0TD3i
+
+RT @rphmeier: Friendly reminder that Polkadot is a build-your-own-rollup protocol with shared security, automatic upgrades, and fast finali…
+
+New primitives for building @Polkadot &amp; @kusamanetwork's next-generation governance system are merged! https://t.co/PUYbeCQ9rd
+
+Congrats to @polkascan with their new, rather slick, UI https://t.co/p1n7GSpzE1
+
+RT @Polkadot: Polkadot has the smallest carbon footprint, crypto research says:
+
+XCM-over-bridges PR is nearly ready, meaning parachains under @Polkadot will be able to send XCM effortlessly not just to each other, but also to parachains on @kusamanetwork, trivialising the transfer of tokens/NFTs, the use of certificates and much more https://t.co/d1aooCcYSN
+
+RT @rphmeier: 'Asynchronous Backing' is a set of optimizations for parachain consensus to increase the throughput of parachains substantial…
+
+RT @Justin_Bons: Cryptocurrency has followed a boom &amp; bust cycle so far
+
+I have been through 3 bear markets
+
+We need the other side of this…
+
+Centralisation will be the bane of western civilisations. https://t.co/T38LLH1gqH
+
+Just the tip of @Polkadot’s trust-free XCMP iceberg. https://t.co/USSfSsVbvU
+
+“If you find yourself seeking a sanctuary from the greed and the fray, it exists, and it's been here the whole time.” https://t.co/8XYgHHmGKE
+
+RT @MoonbeamNetwork: ⚡​ ONE MILLION TRANSACTIONS ⚡️
+Moonbeam hits 1M tx on the network! 🔥​ Moonbeam is lighting up @Polkadot’s ecosystem wi…
+
+RT @kianenigma: On that note, if you find yourself suited to be a runtime/FRAME developer, but you are particularly interested in working o…
+
+RT @shawntabrizi: The Polkadot Pioneers Prize
+
+"Challenge winners will receive DOT; the total prize funds available at program launch will…
+
+RT @hackernoon: "Polkadot Parachains will Lead to Best Practices for Cross-Consensus Communication" https://t.co/GbvzvToWnw #polkadot #dapps
+
+Interested in helping shape the next generation of @Polkadot technology? I'm now interviewing candidates to work with me doing research &amp; prototyping at @ParityTech. NTH: PhD-systems-DBs-GPU-crypto-p2p-OSS-10x-Rust-Rlang-economics.
+gavin@parity.io
+subject: I'm a Curious Coder
+
+RT @subscan_io: I just published New Updates for Subscan (2022-Jan-Part1) https://t.co/l1xbLqqrEq
+
+@rphmeier I like the idea of supporting projects on which we are dependent. But perhaps Firefox/Mozilla wouldn’t want the DOT anyway since they seem to be motivated to bow to ignorant online sentiment asserting that all crypto is bad for the environment.
+
+RT @NovaWalletApp: Are you ready for the DApp feature release in @NovaWalletApp ? 👀
+
+DApp browser provides unlimited possibilities for expl…
+
+RT @Nate_Ham1: Another first for @MoonriverNW , @MetaMask &amp; @kusamanetwork - native KSM being held in a Metamask wallet 🤯👀🤩 https://t.co/Fk…
+
+RT @rphmeier: Technically capable people who think big picture could tinker, trade, and script their way to 7 figure incomes the last few y…
+
+RT @edhesse79: Probably nothing 😳😳😳 https://t.co/4lwtxftWz5
+
+RT @Justin_Bons: 1/18) I do not support SOL, there are far too many red flags.
+
+Consistently displaying a pattern of bad behavior.
+
+Priorit…
+
+@Justin_Bons DOT is required by parachains in order to lease their slot. It is only through their slot that they get trust-free access to Polkadot’s state, become secure and can inter operate with other parachains/shards.
+
+New ecosystem developer analysis by @ElectricCapital shows @Polkadot literally in a class of its own with clearly the stongest developer growth since launch of any Web3 protocol and by far the biggest dev community outside of Ethereum. https://t.co/Tu6OQ7MMeX https://t.co/3X0qWzleYd
+
+RT @CoinDesk: With #Web3 now the center of a lively debate, it’s worth revisiting the following post, originally published in 2014 and now…
+
+@MessariCrypto @Polkadot @cosmos @solana @ethereum Number of contributions is a useless comparison as long as some projects (e.g. Polkadot) use squash commits and others (e.g. Geth) don’t. Squash commits can reduce the apparent number of contributions by multiple orders of magnitude. @MessariCrypto
+
+My usual annual writeup - just in time... https://t.co/gGe9Gn2ffH
+
+RT @Polkadot: .@substrate_io is in the commitment phase on 
+@StackExchange. Sign your name to help create a support site for building block…
+
+RT @Polkadot: Congratulations to @AstarNetwork on winning Polkadot's third auction! 
+
+Astar will be onboarded at block #8179200 [Dec. 18] a…
+
+RT @edhesse79: Adoption begins 😂 @kusamanetwork https://t.co/xPfcmSEIRx
+
+RT @BlockDownConf: Join famed privacy activist @Snowden &amp; @Polkadot's @gavofyork for an historic discussion on DeData tomorrow - you won't…
+
+RT @beeple: KUSAMA https://t.co/v8KJcKCySe
+
+RT @WIRED: Do you ever find yourself wondering, “What is Web3?” You’re not alone. https://t.co/4gltKMZkN2
+
+RT @shawntabrizi: The Substrate StackExchange is now in commitment phase. Please sign your name! https://t.co/AdAClWAq9b
+
+@ph_lux @q9fmz @shawntabrizi @BillLaboon If after xfer/loan an account holds less than 1 DOT (the Existential Deposit) will have its balance set to zero. Either way, when the crowdloan is over, any loaned amounts will be transferred back as expected. So either loan out the full balance or leave at least 1 DOT in there.
+
+The @Polkadot codebase is officially 4 years old today! https://t.co/dWB2VeTshS
+
+RT @Polkadot: The future of the Polkadot brand is in your hands. Cast your vote on the new brand identity and logo design until November 5t…
+
+RT @Polkadot: The vote on the future of the Polkadot brand is open until November 5th. Don’t miss your chance to take part in a historic mo…
+
+RT @NovaWalletApp: We are excited to announce that we are finishing the development of our first release of Nova Wallet - next gen applicat…
+
+RT @BillLaboon: THREAD - @Polkadot Digest 19 Oct 2021
+
+#Polkadot News
+
+Videos of Sub0 Online 2021 (hosted by yours truly) are now online. D…
+
+Quite possibly the first tightly-coupled cross-chain token application between @kusamanetwork parachains. @Polkadot https://t.co/FV65kahDrm
+
+@FractalFlows @Polkadot The DOT in the treasury comes as a natural part of the network protocol. Fees, slashes and suboptimal staking configurations are all contributing factors. If it goes unused, it slowly gets burned. It currently burns 239,988 DOT every month.
+
+The @Polkadot treasury currently has 18,936,300 DOT (DOT, not USD - do the math) in it ready to spend on *your* ideas for building, improving, educating and indeed, anything else that the Polkadot governance believes valuable.
+
+RT @substrate_io: The Substrate Developer Hub [https://t.co/teWiU7oXNQ] and https://t.co/wV6mdmsSCW just merged and got a complete revamp.…
+
+RT @Polkadot: Who doesn’t love gifts?!
+
+Sending DOT or KSM to friends &amp; family just got easier than ever🚀 With Polkadot &amp; @Kusamanetwork Gi…
+
+RT @rphmeier: Unlike L2 rollups, which require long fraud periods before settlement because being included on-chain is irreversible, @Polka…
+
+Whereas other chains take months or even years to deploy an upgrade, @Polkadot and @KusamaNetwork created, voted and deployed new logic on to the chain within 8 hours. All going through a secure, stakeholder-governed decentralized process. https://t.co/zEw0BWIhX5
+
+RT @ParityTech: Want to build the future of #blockchain and #Web3? Parity is seeking out the world's best developers, marketing &amp; comms spe…
+
+RT @SubsocialChain: Multiple centralized services such as @Facebook and @instagram are down right now. Decentralization can help to prevent…
+
+Kudos to @facebook for giving us a very real demonstration of why the move to a decentralised Web 3 is necessary and, indeed, inevitable.
+
+RT @ProfFeynman: Don't pay attention to "authorities" think for yourself.
+
+Some great work by team RMRK integrating @kusamanetwork's Statemine Uniques pallet. Looking forward to the next-generation of Singular. https://t.co/qeqfY8oGwV @Polkadot
+
+@berlin_riq Thanks for the offer - too short notice this time though. Maybe next...
+
+My new favourite track La Clé Des Champs, by my new favourite DJ NTO: https://t.co/rUlegRnOy3
+
+Part III of my series on @polkadot's XCM is out (this time on execution and error management). https://t.co/pP6X8CyECT
+
+RT @kusamanetwork: Welcome to the cₕₐₒₛ @altair_network!
+
+After winning the 9th parachain auction, Altair is now being onboarded as my 10th…
+
+RT @BitDotCountry: 👀👀Shannon - CTO &amp; Gardi - Partnership will be sharing about what https://t.co/8RVcJDf7pY Metaverse is and how it works w…
+
+Moonriver one of several chains helping @Polkadot and @kusamanetwork demonstrate the power of an L0 multi-chain meta-protocol. https://t.co/fHGfVpzxfK
+
+Congratulations to @Polkadot and @kusamanetwork's very own Qinwen for her inclusion in the China Forbes 30 under 30 for Fashion and Arts: https://t.co/vDfeGjnmZE - Well deserved 👏
+
+RT @arringtonXRPcap: We just published “The League of Parachains: Polkadot”, a report on the technical and philosophical foundations of @Po…
+
+RT @XiliangChen: 1/ One of the biggest Substrate developer experience improvement PR is just merged, closed an issue raised almost 3 years…
+
+Part 2 of my @Polkadot XCM article series is now out. This covers XCM versioning and upgradability. Get it here: https://t.co/tNWVljXR3T @kusamanetwork
+
+RT @rphmeier: If you want to work on security-first, practical blockchain protocol design and implementation on @Polkadot at @ParityTech, D…
+
+@notme1713 @DonnieBigBags @crypto_n_cut Quite.
