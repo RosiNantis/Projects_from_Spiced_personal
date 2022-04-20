@@ -17,16 +17,23 @@ def route(duration = 10):
  
 
 
-def tweeter(max_res=100,save_tweet = False):
+def tweet_who(max_res=100,save_tweet = False):
+    """
+    import tweepy and have the twitter key available at the same directory
+    Gives what is tweeted of the person said. 
+    tweet_who(*,max_res=100,save_tweet = False)
+    -saves the weet in a specified folder
+    -give the number of tweets you want to see
+    """
     import tweepy
     import twitter_keys
     client = tweepy.Client(bearer_token=twitter_keys.Bearer_Token)
     give_username = input('\nWhich user should I look for:\n')
     user = client.get_user(username=give_username,user_fields=['name','id','created_at'])
-    user = user.data
-    user_tweets = client.get_users_tweets(id=user.id, tweet_fields=['id','text','created_at'],max_results=max_res)
+    what = user.data
+    user_tweets = client.get_users_tweets(id=what.id, tweet_fields=['id','text','created_at'],max_results=max_res)
     for tweet in user_tweets.data:
-        print(f"The user {user.name} at {tweet.created_at} wrote: {tweet.text}\n")
+        print(f"The user {give_username} wrote: '{tweet.text}'\n")
     if save_tweet == True:
         for tweet in user_tweets.data:
             file = open('tweets/',give_username,'.txt',mode='a',encoding='utf8')
@@ -34,11 +41,19 @@ def tweeter(max_res=100,save_tweet = False):
             file.close()
 
 
-# - means NOT
-#option to extract tweets of a particular language add `lang` parameter eg lang:de
-def tweet_it():
+
+def tweet_what(max_res=100,save_tweet = False):
+    """
+    import tweepy and have the twitter key available at the same directory
+    Gives what is tweeted on the subject you ask it. 
+    tweet_what(*,max_res=100,save_tweet = False)
+    -saves the weet in a specified folder
+    -give the number of tweets you want to see
+    """
     import tweepy
-    tok = input('\nWhome should I search:\n')
+    import twitter_keys
+    client = tweepy.Client(bearer_token=twitter_keys.Bearer_Token)
+    tok = input('\nWhat should I search:\n')
     search_query = ''.join(["#",tok, " -is:retweet"])
     #option to extract tweets of a particular language add `lang` parameter eg lang:de
     cursor = tweepy.Paginator(
@@ -46,10 +61,14 @@ def tweet_it():
         query=search_query,
         tweet_fields=['author_id', 'created_at', 'public_metrics'],
         user_fields=['username']
-    ).flatten(limit=100)
-
+    ).flatten(limit=max_res)
     for tweet in cursor:
-         print(tweet.data)
+        print(f"The user {tweet.id} tweeted on {tweet.created_at} : '{tweet.text}'\n")
+    if save_tweet == True:
+        for tweet in cursor:
+            file = open('tweets/',tok,'.txt',mode='a',encoding='utf8')
+            file.write('\n\n'+tweet.text)
+            file.close()
 
 
 
