@@ -1,0 +1,15 @@
+version: '3'
+services:  # container
+   flask_py:  # name of the container (arbitrary)
+     build: my_flask/
+     volumes:
+        - ./my_flask/:/app
+     ports:
+        - 8000:5000
+
+   requests_py:
+     build: my_requests/
+     volumes: 
+        - ./my_requests/:/app
+     depends_on:
+        - flask_py

@@ -1,0 +1,13 @@
+version: '3'
+services:  # container
+   mongoDB:  # name of the container (arbitrary)
+    image: mongo
+    container_name: 'mongodb'
+    ports:
+    - 27017:27017
+   tweet_collector:
+     build: tweet_collector/
+     volumes: 
+        - ./tweet_collector/:/app
+     depends_on:
+        - mongoDB

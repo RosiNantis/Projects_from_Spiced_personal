@@ -35,10 +35,12 @@ def tweet_who(max_res=100,save_tweet = False):
     for tweet in user_tweets.data:
         print(f"The user {give_username} wrote: '{tweet.text}'\n")
     if save_tweet == True:
+        file = open(give_username+'.txt',mode='a',encoding='utf8')
+        i = 1
         for tweet in user_tweets.data:
-            file = open('tweets/',give_username,'.txt',mode='a',encoding='utf8')
-            file.write('\n\n'+tweet.text)
-            file.close()
+            file.write(str(i)+'. '+tweet.text+'\n\n\n\n')
+            i = 1 + int(i)
+        file.close()
 
 
 
@@ -62,15 +64,21 @@ def tweet_what(max_res=100,save_tweet = False):
         tweet_fields=['author_id', 'created_at', 'public_metrics'],
         user_fields=['username']
     ).flatten(limit=max_res)
-    for tweet in cursor:
+    second_cursor = [tweet for tweet in cursor] # create a list with the items of cursor
+    # cursor when it is operated in any way (e.g. print, save etc.. ) then it zeros. 
+    for tweet in second_cursor:
         print(f"The user {tweet.id} tweeted on {tweet.created_at} : '{tweet.text}'\n")
     if save_tweet == True:
-        for tweet in cursor:
-            file = open('tweets/',tok,'.txt',mode='a',encoding='utf8')
-            file.write('\n\n'+tweet.text)
-            file.close()
+        file = open(tok+'.txt',mode='a',encoding='utf8')
+        i = 1
+        for tweet in second_cursor:
+            file.write(str(i)+'. '+tweet.text+'\n\n\n\n')
+            i = 1 + int(i)
+        file.close()
 
 
 
-# if __name__ == '__main__':  # this is for defining things
-#     route(number_of_list=10)
+if __name__ == '__main__':  # this is for defining things
+    tweet_who(max_res=10)
+    tweet_what(max_res=10)
+    route(duration = 10)
