@@ -3,24 +3,20 @@ services:
 
   mongodb:
     image: mongo
-    container_name: 'mongodb'
+    container_name: 'mongo_tweets'
     ports:
       - 27017:27017
-    networks:
-      - dock-db-test
-    # volumes:
-    #   - ./etl/mongo:/data/db
+    volumes:
+      - ./etl/mongo:/data/db
     
 
   tweet_collector:
-    build: tweet_collector/
+    build: tweet_col/
     container_name: 'tweet_collector'
     volumes:
       - ./tweet_col/:/app
     depends_on:
       - mongodb   
-    networks:
-      - dock-db-test
   
   postgresdb:
     image: postgres
@@ -31,27 +27,16 @@ services:
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=dbtweet
-    networks:
-      - dock-db-test
-    # volumes:
-    #   - ./etl/psql:/var/lib/postgresql
+      - POSTGRES_DB=tweets
+    volumes:
+      - ./etl/psql:/var/lib/postgresql
 
   etl:
-    build: etl_job/
+    build: etl/
     container_name: 'etl'
     volumes:
-      - ./etl_job/:/app
-    networks:
-      - dock-db-test
+      - ./etl/:/app
     depends_on:
       - postgresdb
       - mongodb
       - tweet_collector
-networks:
-  dock-db-test:
-    external: false
-    name: dock-db-test  
-    
-
-

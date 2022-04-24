@@ -1,3 +1,4 @@
+docker-compose.yml
 tweets/**
 InfoProject.rtf
 twitter_keys.py

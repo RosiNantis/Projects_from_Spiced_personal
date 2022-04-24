@@ -18,13 +18,13 @@ def tweet_what(max_res=100,save_tweet = False):
     """
     Bearer_Token = twitter_keys.Bearer_Token
     client = tweepy.Client(bearer_token=Bearer_Token)
-    tok = 'Ukraine'#input('\nWhat should I search:\n')
+    tok = 'bitcoin'
     search_query = ''.join(["#",tok, " -is:retweet"])
     #option to extract tweets of a particular language add `lang` parameter eg lang:de
     cursor = tweepy.Paginator(
         method=client.search_recent_tweets,
         query=search_query,
-        tweet_fields=['id', 'created_at', 'text'],
+        tweet_fields=['id', 'created_at', 'text','lang','geo'],
         user_fields=['username']
     ).flatten(limit=max_res)
     #second_cursor = [tweet for tweet in cursor] # create a list with the items of cursor
@@ -32,7 +32,7 @@ def tweet_what(max_res=100,save_tweet = False):
     for tweet in cursor:
         logging.critical(f'\n\n\nINCOMING TWEET:\n{tweet.text}\n\n\n')
          # create a json record and inserting it in the collections called tweets 
-        record = {'text': tweet.text, 'id': tweet.id, 'created_at': tweet.created_at}
+        record = {'text': tweet.text, 'id': tweet.id, 'created_at': tweet.created_at,'lang':tweet.lang,'geo':tweet.geo}
         # and inserting it in the collections called tweets 
         logging.critical(f"\n---- INSERTING A NEW tweet DOCUMENT INTO THE 'tweets' ----\n")
         db.tweets.insert_one(document=record)
@@ -48,5 +48,5 @@ def tweet_what(max_res=100,save_tweet = False):
 
 
 if __name__ == '__main__':  # this is for defining things
-    tweet_what(max_res=100,save_tweet = False)
+    tweet_what(max_res=10,save_tweet = False)
 

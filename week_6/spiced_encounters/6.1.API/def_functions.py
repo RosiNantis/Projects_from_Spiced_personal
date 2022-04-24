@@ -78,6 +78,7 @@ def tweet_what(max_res=100,save_tweet = False):
 
 
 
+
 if __name__ == '__main__':  # this is for defining things
     tweet_who(max_res=10)
     tweet_what(max_res=10)
