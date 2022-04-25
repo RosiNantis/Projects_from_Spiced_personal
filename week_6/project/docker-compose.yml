@@ -5,10 +5,14 @@ services:  # container
       container_name: 'mongodb' # container name
       ports:
          - 27017:27017 #port in local machine : post of the mongo (universal)
+      volumes:
+         - ./etl/mongodb:/data/db
    tweet_collector:
       build: tweet_col/
       volumes: 
          - ./tweet_col/:/app
+      depends_on:
+         - mongodb
    postgresdb:  # next container to run
       image: postgres:14.1
       #restart: always
@@ -19,11 +23,14 @@ services:  # container
          - POSTGRES_USER=postgres
          - POSTGRES_PASSWORD=postgres
          - POSTGRES_DB=dbtweet
+      volumes:
+         - ./etl/psql:/var/lib/postgresql
    etl:  # run container with this name
       build: etl/
       volumes: 
          - ./etl/:/app
       depends_on:
-         - mongodb
          - postgresdb
+         - mongodb
+
 

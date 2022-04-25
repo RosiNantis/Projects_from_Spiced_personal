@@ -36,7 +36,7 @@ collection = db.twitter.find()
 
 def polarity_scores(text):
     analyzer  = SentimentIntensityAnalyzer()
-    score = analyzer.polarity_scores('text')['compound']
+    score = analyzer.polarity_scores(text)['compound']
     return score
 
 # Clean your tweets
@@ -64,30 +64,29 @@ DATABASE_NAME_PG = 'dbtweet'
 
 
 
-
+time.sleep(10)  # seconds
 # Connection string
 conn_string_pg = f"postgresql://{USERNAME_PG}:{PASSWORD_PG}@{HOST_PG}:{PORT_PG}/{DATABASE_NAME_PG}" 
 pg = create_engine(conn_string_pg,echo=False)
-tweets_db = "CREATE table IF NOT EXISTS tweets (text VARCHAR(500), sentiment NUMERIC);"
-pg.execute(tweets_db)
+tweets = "CREATE table IF NOT EXISTS tweets (text VARCHAR(500), sentiment NUMERIC);"
+pg.execute(tweets)
 
-
-
+time.sleep(10)  # seconds
 
 # Transform your tweets and create a dictionary
 cleantweets=[]
 for tweet in collection:
     x = tweet['text']
     # print('print XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',x)
-    # print(ty
+    # print(type(x))postgre
     y= clean_tweets(x)
     cleantweets.append(y)
-
+time.sleep(10)  # seconds
 scores=[]
 for tweet in cleantweets:
-    scores.append(polarity_scores(cleantweets))
+    scores.append(polarity_scores(tweet))
 
-print(scores)
+# print(scores)
 
 query1 = "INSERT INTO tweets VALUES (%s, %s);"
 for text, score in zip(cleantweets, scores):#

@@ -48,5 +48,5 @@ def tweet_what(max_res=100,save_tweet = False):
 
 
 if __name__ == '__main__':  # this is for defining things
-    tweet_what(max_res=10,save_tweet = False)
+    tweet_what(max_res=1000,save_tweet = False)
 
