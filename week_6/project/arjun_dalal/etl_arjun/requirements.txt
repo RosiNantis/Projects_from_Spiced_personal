@@ -1,4 +1,0 @@
-pymongo
-sqlalchemy
-vaderSentiment
-psycopg2
