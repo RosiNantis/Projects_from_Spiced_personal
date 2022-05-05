@@ -2,16 +2,16 @@ import numpy as np
 import cv2
 
 
-TILE_SIZE = 16
+TILE_SIZE = 32
 
 MARKET = """
 ##################
 ##..............##
-##..##..##..##..##
-##..#b..##..##..##
-##..##..##..##..##
-##..##..##..##..##
-##..##..##..##..##
+##..##..m#..#a..##
+##..##..m#..#a..##
+##..##..m#..#b..##
+##..g#..##..#b..##
+##..g#..##..#b..##
 ##...............#
 ##..C#..C#..C#...#
 ##..##..##..##...#
@@ -25,7 +25,7 @@ class SupermarketMap:
 
     def __init__(self, layout, tiles):
         """
-        layout : a string with each character reprecdsenting a tile
+        layout : a string with each character representing a tile
         tiles   : a numpy array containing all the tile images
         """
         self.tiles = tiles
@@ -54,6 +54,12 @@ class SupermarketMap:
             return self.extract_tile(2, 8)
         elif char == "b":
             return self.extract_tile(0, 4)
+        elif char == "a":
+            return self.extract_tile(1, 11)
+        elif char == "m":
+            return self.extract_tile(4, 13)
+        elif char == "g":
+            return self.extract_tile(6, 13)
         else:
             return self.extract_tile(1, 2)
 
@@ -77,20 +83,73 @@ class SupermarketMap:
         cv2.imwrite(filename, self.image)
 
 
+class Customer:
+
+   def __init__(self, supermarket, avatar, row, col):
+      """
+      supermarket: A SuperMarketMap object
+      avatar : a numpy array containing a 32x32 tile image
+      row: the starting row
+      col: the starting column
+      """
+
+      self.supermarket = supermarket
+      self.avatar = avatar
+      self.row = row
+      self.col = col
+
+   def draw(self, frame):
+      x = self.col * TILE_SIZE
+      y = self.row * TILE_SIZE
+      frame[y:y+self.avatar.shape[0], x:x+self.avatar.shape[1]] = self.avatar
+
+
+   def move(self, direction):
+        new_row = self.row
+        new_col = self.col
+
+        if direction == 'up':
+            new_row -= 1
+        elif direction == 'down':
+            new_row += 1
+        elif direction == 'left':
+            new_col -= 1
+        elif direction == 'right':
+            new_col += 1
+
+        if self.supermarket.contents[new_row][new_col] == '.':
+            self.col = new_col
+            self.row = new_row
 if __name__ == "__main__":
 
     background = np.zeros((500, 700, 3), np.uint8)
     tiles = cv2.imread("tiles.png")
-
+    pac = tiles[96:128, 0:32, :]
     market = SupermarketMap(MARKET, tiles)
-
+    c = Customer(market,pac,10,14)
     while True:
         frame = background.copy()
         market.draw(frame)
-
+        c.draw(frame)
+        cv2.imshow('frame', frame)
         # https://www.ascii-code.com/
         key = cv2.waitKey(1)
        
+        # 119 is w
+        if key == 119:
+            c.move('up')
+        # 115 is s
+        if key == 115:
+            c.move('down')
+
+         # 97 is a
+        if key == 97:
+            c.move('left')
+        
+         # 100 is d
+        if key == 100:
+            c.move('right')
+
         if key == 113: # 'q' key
             break
     
