@@ -8,7 +8,7 @@ MARKET = """
 ##################
 ##..............##
 ##..##..##..##..##
-##..##..##..##..##
+##..##b.##..##..##
 ##..##..##..##..##
 ##..##..##..##..##
 ##..##..##..##..##
@@ -25,7 +25,7 @@ class SupermarketMap:
 
     def __init__(self, layout, tiles):
         """
-        layout : a string with each character representing a tile
+        layout : a string with each character reprecdsenting a tile
         tiles   : a numpy array containing all the tile images
         """
         self.tiles = tiles
@@ -52,6 +52,8 @@ class SupermarketMap:
             return self.extract_tile(7, 3)
         elif char == "C":
             return self.extract_tile(2, 8)
+        elif char == "b":
+            return self.extract_tile(0, 4)
         else:
             return self.extract_tile(1, 2)
 
