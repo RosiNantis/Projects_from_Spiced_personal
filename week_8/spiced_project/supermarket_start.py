@@ -26,6 +26,7 @@ class Customer:
     def __init__(self, name, state = True):
         self.customer_id = name
         self.state_customer = state
+        self.starting_alley()
 
     def starting_alley(self,location= departments, weights = distribution):
         self.starting_point = random.choices(location, weights , k=1)[0]
