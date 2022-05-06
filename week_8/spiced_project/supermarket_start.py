@@ -30,6 +30,7 @@ class Customer:
 
     def starting_alley(self,location= departments, weights = distribution):
         self.starting_point = random.choices(location, weights , k=1)[0]
+        print(f'Here we go!!!!!!{self.starting_point}')
         self.location = departments_names[self.starting_point]
         return self.location
 
@@ -39,7 +40,10 @@ class Customer:
         Propagates the customer to the next state.
         Returns nothing.
         '''
+        
         self.next_dep = random.choices(location, weights=TRANSITION_MATRIX_list[self.starting_point])[0]
+        if self.location == departments_names[self.next_dep]:
+            print('it happened' + str(self.customer_id))
         self.location = departments_names[self.next_dep]
         return self.location
 
@@ -55,19 +59,15 @@ class Supermarket:
         self.first_id = 1
         self.ticktock = datetime.datetime(2022,1,1,7,00)
         self.closing_time = datetime.datetime(2022,1,1,8,00)
-    
+        self.remove_indices = []
+
     def get_time(self):
         """current time in HH:MM format,
         """
         self.clock = self.ticktock.strftime('%H:%M')
         return self.clock
 
-    def print_customers(self):
-        """print all customers with the current time and id in CSV format.
-        """
-        for i in range(len(self.customers)):
-            print(f'At {self.get_time()} the customer {self.customers[i]} is in the "{self.customers[i].location}" alley.')
-
+    
     def add_new_customers(self):
         """randomly creates new customers.
         """
@@ -78,15 +78,23 @@ class Supermarket:
             self.customers.append(c)
             self.first_id += 1
             number += 1
-            # self.location.append(customer_new.starting_alley())
-            # self.next_alley.append(customer_new.next_state())       
-        return self.customers#, self.location, self.next_alley
+        #print(f'The length of the customers is {len(self.customers)}')       
+        return self.customers
 
+    def print_customers(self):
+        """print all customers with the current time and id in CSV format.
+        """
+        for i in range(len(self.customers)):
+            print(f'At {self.get_time()} the customer {self.customers[i].customer_id} is in the "{self.customers[i].location}" alley.')
+        self.remove_existing_customers()
 
     def next_minute(self):
         """propagates all customers to the next state.
         """
-        self.ticktock += datetime.timedelta(0,0,0,0,1) # time in minutes
+        self.ticktock += datetime.timedelta(0,0,0,0,10) # time in minutes
+        for i in range(len(self.customers)):
+            self.next_alley.append(self.customers[i].next_state())
+        print('I am moving them to the next state')
         self.location = self.next_alley
         #self.remove_existing_customers()
         return self.ticktock, self.location
@@ -95,11 +103,12 @@ class Supermarket:
     def remove_existing_customers(self):
         """removes every customer that is not active any more.
         """
-        remove_indices = []
-        for idx, c in enumerate(self.location):
-            if c == 'checkout':
-                remove_indices.append(idx)              
-        self.customers = [i for j, i in enumerate(self.customers) if j not in remove_indices]  
+        
+        # for idx, c in enumerate(self.customers):
+        #     if c.location == 'checkout':
+        #         self.remove_indices.append(idx)  
+        # print(f'We got to remove the {self.remove_indices}')            
+        self.customers = [i for j, i in enumerate(self.customers) if i.location != 'checkout']  
 
     #def __repr__(self):
         
@@ -108,16 +117,12 @@ class Supermarket:
 
 
 start = Supermarket()
-# start.get_time()
-# start.add_new_customers()
-# start.print_customers()
-# start.next_minute()
-# start.remove_existing_customers()
+
 while start.ticktock <= start.closing_time:
+    start.get_time()
     start.add_new_customers()
-    start.get_time() # ok
     start.print_customers()
     start.next_minute()
-    start.remove_existing_customers()
+    #start.remove_existing_customers()
 
 
