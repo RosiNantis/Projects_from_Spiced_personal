@@ -65,7 +65,7 @@ class Supermarket:
         """print all customers with the current time and id in CSV format.
         """
         for i in range(len(self.customers)):
-            print(f'At {self.get_time()} the customer {self.customers[i]} is in the "{self.location[i]}" alley.')
+            print(f'At {self.get_time()} the customer {self.customers[i]} is in the "{self.customers[i].location}" alley.')
 
     def add_new_customers(self):
         """randomly creates new customers.
@@ -73,13 +73,13 @@ class Supermarket:
         rand_numb =3# np.random.randint(10)
         number = 0
         while number<=rand_numb:
-            customer_new = Customer(self.first_id)
-            self.customers.append(customer_new.customer_id)
+            c =Customer(self.first_id)
+            self.customers.append(c)
             self.first_id += 1
             number += 1
-            self.location.append(customer_new.starting_alley())
-            self.next_alley.append(customer_new.next_state())       
-        return self.customers, self.location, self.next_alley
+            # self.location.append(customer_new.starting_alley())
+            # self.next_alley.append(customer_new.next_state())       
+        return self.customers#, self.location, self.next_alley
 
 
     def next_minute(self):
