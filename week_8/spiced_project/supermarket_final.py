@@ -4,9 +4,6 @@ import numpy as np
 import random
 import datetime
 
-
-# Global variables
-
 departments = [0,1,2,3,4]#['checkout','dairy', 'drinks',  'fruit', 'spices']
 departments_names = ['checkout','dairy', 'drinks',  'fruit', 'spices']
 distribution = [0,0.288,0.154,0.377,0.182]
@@ -24,10 +21,11 @@ class Customer:
     Parameter
     -------
     '''
-
+    
     def __init__(self, name):
         self.customer_id = name
         self.starting_alley()
+        self.next_state()
 
     def starting_alley(self,location= departments, weights = distribution):
         self.starting_point = random.choices(location, weights , k=1)[0]
@@ -41,8 +39,8 @@ class Customer:
         Returns nothing.
         '''
         self.next_dep = random.choices(location, weights=TRANSITION_MATRIX_list[self.starting_point])[0]
-        self.location = departments_names[self.next_dep]
-        return self.location
+        self.location_next = departments_names[self.next_dep]
+        return self.location_next
 
 
 class Supermarket:
@@ -51,7 +49,7 @@ class Supermarket:
     def __init__(self):        
         # a list of Customer objects
         self.customers = []
-        self.location = []
+        self.locations = []
         self.next_alley = []
         self.first_id = 1
         self.ticktock = datetime.datetime(2022,1,1,7,00)
@@ -67,7 +65,7 @@ class Supermarket:
     def add_new_customers(self):
         """randomly creates new customers.
         """
-        rand_numb = 3#np.random.randint(10)
+        rand_numb =3# np.random.randint(10)
         number = 0
         while number<=rand_numb:
             c =Customer(self.first_id)
@@ -80,23 +78,26 @@ class Supermarket:
         """print all customers with the current time and id in CSV format.
         """
         for i in range(len(self.customers)):
-            print(f'At {self.get_time()} the customer "{self.customers[i].customer_id}" is in the "{self.customers[i].location}" alley.')
+            print(f'At {self.get_time()} the customer {self.customers[i].customer_id} is in the "{self.customers[i].location}" alley.')
+        
+    def remove_existing_customers(self):
+        """removes every customer that is not active any more.
+        """         
+        self.customers = [i for j, i in enumerate(self.locations) if i != 'checkout']  
+
 
     def next_minute(self):
         """propagates all customers to the next state.
         """
-        self.ticktock += datetime.timedelta(0,0,0,0,1) # time in minutes
-        for i in range(len(self.customers)):
-            self.next_alley.append(self.customers[i].next_state())
-        print('                 ---:::---:::---')
-        self.location = self.next_alley
-        return self.ticktock, self.location
+        self.ticktock += datetime.timedelta(0,0,0,0,10) # time in minutes
+        for idx, c in enumerate(self.customers):
+            self.next_alley.append(c.location_next)
+        print('I am moving them to the next state')
+        self.locations.append(self.next_alley)
+        return self.ticktock, self.locations
 
 
-    def remove_existing_customers(self):
-        """removes every customer that is not active any more.
-        """         
-        self.customers = [i for j, i in enumerate(self.customers) if i.location != 'checkout']  
+
 
 
 start = Supermarket()
