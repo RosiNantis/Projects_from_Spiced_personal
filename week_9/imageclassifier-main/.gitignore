@@ -1,11 +1,15 @@
-output/**
-docker-compose.yml
-tweets/**
-spiced_notes/**
-InfoProject.rtf
-twitter_keys.py
-password.py
-test.py
+# Custom files
+
+notebooks
+models/*
+examples/data/*
+data/*
+!data/README.md
+!models/README.md
+
+.vscode/*
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -135,10 +139,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-#MacOS
-.DS_Store
-
-#Large files 
-.jar
-.csv
