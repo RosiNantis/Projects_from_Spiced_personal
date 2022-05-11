@@ -6,7 +6,7 @@ import matplotlib as plt
 import numpy as np
 import random
 from sklearn.model_selection import train_test_split
-from tensorflow import kerasfrom 
+from tensorflow import keras
 
 def gray_reshape(directory, new_size = (28,28), gray =True):
     """
