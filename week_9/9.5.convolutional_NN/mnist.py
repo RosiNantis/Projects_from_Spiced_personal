@@ -12,21 +12,22 @@ input_shape = (28, 28, 1)
 (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
 
 # Scale images to the [0, 1] range
+#### Normalise
 x_train = x_train.astype("float32") / 255
 x_test = x_test.astype("float32") / 255
 
 
 # one hot encode
-print(y_train)
+
 y_train = keras.utils.to_categorical(y_train, num_classes)
 print(y_train)
 y_test = keras.utils.to_categorical(y_test, num_classes)
-
-# define the keras model
+print(y_test)
+# define the keras model.    the kernel size is the window that checks geometries: can be (3,3), (5,5), (7,7)
 model = keras.Sequential(
     [
         keras.Input(shape=input_shape),
-        layers.Conv2D(32, kernel_size=(3, 3), activation="relu"),
+        layers.Conv2D(32, kernel_size=(3, 3), activation="relu"),   # number of neurons:  must be multiples of 2. good technique to start eith 8 and then we increase in the insede layers.
         layers.MaxPooling2D(pool_size=(2, 2)),
         layers.Conv2D(64, kernel_size=(3, 3), activation="relu"),
         layers.MaxPooling2D(pool_size=(2, 2)),
