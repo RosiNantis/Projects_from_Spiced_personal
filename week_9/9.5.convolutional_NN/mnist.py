@@ -1,9 +1,10 @@
 import numpy as np
 
 # pip install tensorflow the first time 
+import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
-
+with tf.device('/GPU')
 # Model / data parameters
 num_classes = 10
 input_shape = (28, 28, 1)
