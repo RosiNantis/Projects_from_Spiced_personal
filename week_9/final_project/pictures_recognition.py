@@ -3,7 +3,19 @@ import logging
 import os
 import cv2
 from utils import write_image, key_action, init_cam
+from tensorflow.keras.models import load_model
+import time
+import numpy as np
+from tensorflow.keras.preprocessing import image # Keras own inbuild image class
+from skimage.transform import resize
 
+# Load model
+model = load_model("model_mobilinet_v2.h5")
+
+#load classes
+mapping = {'plants' : 0,'coins' : 1,'faces' : 2,'cups' : 3,'glasses' : 4,'pens' : 5,'gestures' : 6,'cutlery' : 7,'plates' : 8, 
+             'nail_polishes' : 9  ,'shoes' : 10 
+             }
 
 
 if __name__ == "__main__":
@@ -42,18 +54,30 @@ if __name__ == "__main__":
             
             # get key event
             key = key_action()
-            
             if key == 'space':
                 # write the image without overlay
                 # extract the [224x224] rectangle out of it
-                image = frame[y:y+width, x:x+width, :]
-                write_image(out_folder, image) 
+                img = frame[y:y+width, x:x+width, :]
+                #write_image(out_folder, img) 
+                #convert image to array, can also specify datatype
+                #print(type(img))
+                img = image.img_to_array(img,dtype='uint8')
+                image_cam = img.reshape(1,224,224,3)
+                ynew = model.predict(image_cam)
+                # show the inputs and predicted outputs
+                
+                for idx, value in enumerate(ynew):
+                    print(f'With {np.max(value)} probability the model predicts that it is a {list(mapping)[np.where(value == np.max(value))[0][0]]}.')#
 
             # disable ugly toolbar
             cv2.namedWindow('frame', flags=cv2.WINDOW_GUI_NORMAL)              
             
             # display the resulting frame
-            cv2.imshow('frame', frame)            
+            cv2.imshow('frame', frame) 
+
+
+ 
+
             
     finally:
         # when everything done, release the capture
