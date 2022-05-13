@@ -62,7 +62,10 @@ if __name__ == "__main__":
                 #convert image to array, can also specify datatype
                 #print(type(img))
                 img = image.img_to_array(img,dtype='uint8')
-                image_cam = img.reshape(1,224,224,3)
+                bins = 224
+                #item_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+                item_resized_gray = resize(img, (bins,bins))
+                image_cam = item_resized_gray.reshape(1,bins,bins,3)
                 ynew = model.predict(image_cam)
                 # show the inputs and predicted outputs
 
