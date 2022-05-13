@@ -10,7 +10,7 @@ from tensorflow.keras.preprocessing import image # Keras own inbuild image class
 from skimage.transform import resize
 
 # Load model
-model = load_model("model_mobilinet_v2.h5")
+model = load_model("model_vgg16.h5")
 
 #load classes
 mapping = {'plants' : 0,'coins' : 1,'faces' : 2,'cups' : 3,'glasses' : 4,'pens' : 5,'gestures' : 6,'cutlery' : 7,'plates' : 8, 
@@ -65,7 +65,7 @@ if __name__ == "__main__":
                 image_cam = img.reshape(1,224,224,3)
                 ynew = model.predict(image_cam)
                 # show the inputs and predicted outputs
-                
+
                 for idx, value in enumerate(ynew):
                     print(f'With {np.max(value)} probability the model predicts that it is a {list(mapping)[np.where(value == np.max(value))[0][0]]}.')#
 
