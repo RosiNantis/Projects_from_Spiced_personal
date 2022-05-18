@@ -1,5 +1,5 @@
 from recommender import recommend_random
-from utils import movies, print_movie_titles
+from utils import movies
 # example input of web application
 user_rating = {
     'the lion king': 5,
