@@ -53,4 +53,7 @@ def recommend_with_NMF(user_item_matrix, user_rating, model, k=5):
     pass
 
 def recommend_with_user_similarity(user_item_matrix, user_rating, k=5):
+    
     pass
+
+
