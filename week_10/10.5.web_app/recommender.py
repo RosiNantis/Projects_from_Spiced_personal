@@ -12,10 +12,15 @@ def recommend_random(movies, user_rating, k=5):
     """
     return k random unseen movies for user 
     """
+    # makes a frame for the external user ratings of the movies(features)
     user = pd.DataFrame(user_rating, index=[0])
+    # rearrange the frame as movies and ratings two columns, movies and ratings
     user_t = user.T.reset_index()
+    # list of the entry movies
     user_movie_entries = list(user_t["index"])
+    # list of the movie titles of library
     movie_titles = list(movies["title"])
+    # matches the movies from user with the library
     intended_movies = [match_movie_title(title, movie_titles) for title in user_movie_entries]
     
     # convert these movies to intended movies and convert them into movie ids
@@ -28,7 +33,8 @@ def recommend_random(movies, user_rating, k=5):
 
 
 
-def recommend_with_NMF(user_item_matrix, user_rating, model, k=5):
+#def recommend_with_NMF(user_item_matrix, user_rating, model, k=5):
+def recommend_with_NMF(movies , rating ):
     """
     NMF Recommender
     INPUT
