@@ -23,7 +23,7 @@ def welcome():
     return render_template(
         'index.html',
         name="Stationary Srirachas 🌶",
-        movies=movies['title'].tolist(),
+        movies=movies['title'].unique().tolist(),
         recommended_method = methods_recommendation,
         )
     # 'movies' variable is passed from python file to the html file for accessing it inside the html file

@@ -15,7 +15,13 @@ from fuzzywuzzy import process
 import pickle
 
 
-movies = pd.read_csv('movies_ratings.csv', index_col=0)
+#movies = pd.read_csv('movies_ratings.csv', index_col=0)
+umrT = pd.read_csv('../data/ml-latest-small/ratings.csv', na_values = 'Nan',index_col=0)
+mtg = pd.read_csv('../data/ml-latest-small/movies.csv', na_values = 'Nan',index_col=0)
+# merge the two frames based on the column movieid
+movies = pd.merge(umrT, mtg, on='movieId')
+
+
 
 
 methods_recommendation = ['random','NMF','user_similarity']
@@ -23,6 +29,17 @@ methods_recommendation = ['random','NMF','user_similarity']
 # load model
 with open('static/model5.pkl', 'rb') as f:
     model= pickle.load(f)
+
+def get_movie_frame(umrT=umrT, mtg = mtg):
+    """
+    i will get a Data Frame with movieId Title average ratings for per user
+    """
+    umrT_av_rat = umrT.set_index('movieId').groupby(['movieId']).mean()
+    # merge the two frames based on the column movieid
+    movies = pd.merge(umrT_av_rat, mtg, on='movieId')
+    # reset index
+    movies = movies.reset_index()
+    return movies
 
 def match_movie_title(input_title, movie_titles):
     """
