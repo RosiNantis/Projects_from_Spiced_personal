@@ -16,8 +16,8 @@ import pickle
 
 
 #movies = pd.read_csv('movies_ratings.csv', index_col=0)
-umrT = pd.read_csv('../data/ml-latest-small/ratings.csv', na_values = 'Nan',index_col=0)
-mtg = pd.read_csv('../data/ml-latest-small/movies.csv', na_values = 'Nan',index_col=0)
+umrT = pd.read_csv('../data/ml-latest-small/ratings.csv', na_values = 'Nan')
+mtg = pd.read_csv('../data/ml-latest-small/movies.csv', na_values = 'Nan')
 # merge the two frames based on the column movieid
 movies = pd.merge(umrT, mtg, on='movieId')
 
@@ -32,13 +32,21 @@ with open('static/model5.pkl', 'rb') as f:
 
 def get_movie_frame(umrT=umrT, mtg = mtg):
     """
-    i will get a Data Frame with movieId Title average ratings for per user
+    i will get a Data Frame with movieId Title average ratings for per user.
+    Final outcome is a frame with columns:# 
+    movieID, userID, avg(rate), title, genres, accurate(rate)
     """
     umrT_av_rat = umrT.set_index('movieId').groupby(['movieId']).mean()
     # merge the two frames based on the column movieid
-    movies = pd.merge(umrT_av_rat, mtg, on='movieId')
+    movies = pd.merge(umrT, mtg, on='movieId')
+    # merge the two frames based on the column movieid to find average rating
+    movieId_rating = pd.merge(umrT_av_rat, mtg, on='movieId')
+    # merge movieID, userID, avg(rate), title, genres, accurate(rate)
+    mov = pd.merge(movieId_rating,movies, on='movieId', how = 'left')[["movieId", "rating_x","title_x","userId_y","genres_x","rating_y"]]
+    mov.columns = [["movieId", "rating_avg","title","userId","genres","rating_acc"]]
+    mov.head(5)
     # reset index
-    movies = movies.reset_index()
+    movies = mov
     return movies
 
 def match_movie_title(input_title, movie_titles):
