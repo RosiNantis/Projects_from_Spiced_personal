@@ -17,6 +17,7 @@ import pickle
 
 movies = pd.read_csv('movies_ratings.csv', index_col=0)
 
+
 methods_recommendation = ['random','NMF','user_similarity']
 
 # load model
