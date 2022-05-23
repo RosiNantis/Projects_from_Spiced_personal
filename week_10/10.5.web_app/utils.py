@@ -14,8 +14,9 @@ import numpy as np
 from fuzzywuzzy import process
 
 
-movies = pd.read_csv('movies_ratings.csv', index_col=0) 
+movies = pd.read_csv('movies_ratings.csv', index_col=0)
 
+methods_recommendation = ['random','NMF','user_similarity']
 
 def match_movie_title(input_title, movie_titles):
     """
@@ -51,3 +52,4 @@ def lookup_movieId(movies, movieId):
     boolean = movies["movieId"] == movieId
     movie_title = list(movies[boolean]["title"])[0]
     return movie_title
+
