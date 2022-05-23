@@ -15,22 +15,25 @@
     <h1> Today's movie recommendations for {{name}} </h1> <!--Passing the jinja template, the value of name is passed from python file to html-->
     <h2>Simple random movie recommender</h2>
     <img src="static/logo.svg"/> <!--Placing an image in html-->
-    <p>Please way of recommendation</p>
-    <!-- here gives the user the ability to choose the recommendation function between random, NMF and cosine simmilarity-->
-    <form action="/recommend"> 
-        <input type="text" name="methods" placeholder="Enter method of recommendation" list="recommended_method" required>
 
-    </form>  
+    <!-- 
+    <p>Place the method of recommendation</p>
+    <form action="/recommend"> 
+        <input type="text" name="methods" placeholder="Enter method of recommendation" list="recommended_method">
+    </form>  -->
 
     <p>Please rate your movie</p>
     <!--Creating a form for the user to input values through the webpage-->
     <form action="/recommend"> <!--After clicking on submit button the routing is done on the /recommend-->
-        {% for index in range(3) %}
+        {% for index in range(1) %}
         <!--name passed inorder to reference the input tag, placeholder writes text inside input field-->
         <input type="text" name="title" placeholder="Enter movies" list="movies">
         <input type="number" name="rating" placeholder="(1-5)" min="1" max="5" required>
         <br>
         {% endfor %}
+        <p>Place the method</p>
+        <input type="text" name="methode" placeholder="Enter method of recommendation" list="recommended_method">
+        <br>
         <button type="submit">Show Recommendation</button>
 
     </form>   
@@ -52,7 +55,7 @@
         {% endfor %}
     </datalist>
 
-    
+
 </body>
 
 </html>

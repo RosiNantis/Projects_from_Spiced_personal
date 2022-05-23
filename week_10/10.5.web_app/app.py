@@ -31,23 +31,22 @@ def welcome():
 @app.route('/recommend')
 def recommend():
     #read user input from url/webpage
-    print(f'I recommend!!!!!{request.args}')
+    print(request.args)
     titles = request.args.getlist('title') # taking lists of titles only from user input
     ratings = request.args.getlist('rating') # taking lists of ratings only from user input
-    methods = request.args.getlist('methods')
-    print(f'The method used for the recommendation is {methods}')
-    # print(titles,ratings,methods)
-    # # converting lists of titles and ratings into dict to pass to our recommender model
-    # user_rating = dict(zip(titles,ratings)) 
-    # if methods == 'random':
-    #     movie_ids = recommend_random(movies, user_rating)
-    # elif methods == 'NMF':
-    #     movie_ids = recommend_with_NMF
-    # else:
-    #     movie_ids = recommend_with_user_similarity
-    # # renders the html page as the output of this function
-    # return  render_template('recommender.html',movie_ids=movie_ids) 
-    # # 'movie_ids' variable is passed from python file to the html file for accessing it inside the html file
+    methods = request.args.getlist('methode') # take the method to use
+    print(titles,ratings,methods)
+    #converting lists of titles and ratings into dict to pass to our recommender model
+    user_rating = dict(zip(titles,ratings)) 
+    if methods[0] == 'random':
+        movie_ids = recommend_random(movies, user_rating)
+    elif methods[0] == 'NMF':
+        movie_ids = recommend_with_NMF(movies, user_rating)
+    else:
+        movie_ids = recommend_with_user_similarity
+    # renders the html page as the output of this function
+    return  render_template('recommender.html',movie_ids=movie_ids) 
+    # 'movie_ids' variable is passed from python file to the html file for accessing it inside the html file
 
 
 # Runs the app (main module)

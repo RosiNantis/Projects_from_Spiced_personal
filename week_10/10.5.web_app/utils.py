@@ -12,11 +12,16 @@ UTILS
 import pandas as pd
 import numpy as np
 from fuzzywuzzy import process
+import pickle
 
 
 movies = pd.read_csv('movies_ratings.csv', index_col=0)
 
 methods_recommendation = ['random','NMF','user_similarity']
+
+# load model
+with open('static/model5.pkl', 'rb') as f:
+    model= pickle.load(f)
 
 def match_movie_title(input_title, movie_titles):
     """
