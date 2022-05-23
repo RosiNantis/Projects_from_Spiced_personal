@@ -5,7 +5,7 @@ all algorithms return a list of movieids
 
 import pandas as pd
 import numpy as np
-from utils import lookup_movieId, match_movie_title
+from utils import lookup_movieId, match_movie_title, model
 
 
 def recommend_random(movies, user_rating, k=5):
@@ -49,15 +49,16 @@ def recommend_with_NMF(user_item_matrix, user_rating, model, k=5):
 
     # discard seen movies and sort the prediction
     
-    # return a list of movie ids
+    # return random_movies  
     pass
 
 def recommend_with_user_similarity(user_item_matrix, user_rating, k=5):
     # initiate a new user
 
-    # 
 
 
+
+    # return random_movies  
     pass
 
 
