@@ -1,7 +1,7 @@
 import re
 from recommender import recommend_random, recommend_with_NMF, recommend_with_user_similarity
 from flask import Flask,render_template,request
-from utils import movies, methods_recommendation
+from utils import movies, methods_recommendation, get_movie_frame
 
 # # example input of web application
 # user_rating = {
@@ -39,9 +39,13 @@ def recommend():
     #converting lists of titles and ratings into dict to pass to our recommender model
     user_rating = dict(zip(titles,ratings)) 
     if methods[0] == 'random':
+        # movies is the imported DataFrame from the welcome() and user_rating is the user input
         movie_ids = recommend_random(movies, user_rating)
     elif methods[0] == 'NMF':
+        movies = get_movie_frame(method = 'NMF')
+        print('check point one')
         movie_ids = recommend_with_NMF(movies, user_rating)
+        print('check point two')
     else:
         movie_ids = recommend_with_user_similarity
     # renders the html page as the output of this function

@@ -77,14 +77,36 @@ def print_movie_titles(movie_titles):
     for movie_id in movie_titles:
         print(f'            > {movie_id}')
 
-def create_user_vector(user_rating, movies):
+
+def create_user_vector(user_rating):
     """
     Convert dict of user_ratings to a user_vector
     """       
-    # generate the user vector
-    print(user_rating)
-    user_vector = None
-    return user_vector
+    ##### add a new user for the NMF method with movies and ratings and NaN else #######
+
+    # ------------------------------------------------------------ #
+    movies= get_movie_frame(method = 'NMF') 
+    user = pd.DataFrame(user_rating, index=[0])
+    user_t = user.T.reset_index()
+    # list of the entry movies
+    user_movie_entries = list(user_t["index"])
+    # list of the entry movies ratings
+    user_rate_entries = list(user_t[0])
+    #list of the movie titles of library
+    movies = get_movie_frame()
+    movie_titles = list(movies.columns)
+    # # matches the movies from user with the library
+    intended_movies = [match_movie_title(title, movie_titles) for title in user_movie_entries]
+    # # create a frame with one user
+    user_new = pd.DataFrame(movies.loc[1].copy())
+    user_new.columns = [['0']]
+    user_new[['0']] = np.nan
+    for mov in user_new.index:
+        for idx, int_mov in enumerate(intended_movies):
+            if mov == int_mov:
+                user_new.loc[int_mov] = user_rate_entries[idx]
+    new_user = user_new.T
+    return new_user
 
 
 def lookup_movieId(movies, movieId):

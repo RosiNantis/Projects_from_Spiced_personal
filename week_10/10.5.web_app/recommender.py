@@ -5,7 +5,7 @@ all algorithms return a list of movieids
 
 import pandas as pd
 import numpy as np
-from utils import lookup_movieId, match_movie_title, model
+from utils import lookup_movieId, match_movie_title, model, create_user_vector
 
 
 def recommend_random(movies, user_rating, k=5):
@@ -34,7 +34,7 @@ def recommend_random(movies, user_rating, k=5):
 
 
 #def recommend_with_NMF(user_item_matrix, user_rating, model, k=5):
-def recommend_with_NMF(movies , rating ):
+def recommend_with_NMF(movies, user_rating, k =5):
     """
     NMF Recommender
     INPUT
@@ -46,7 +46,9 @@ def recommend_with_NMF(movies , rating ):
     """
     
     # initialization - impute missing values    
-    
+    new_user = create_user_vector(user_rating)
+    movies_all_users = pd.concat([new_user, movies], axis = 0,ignore_index=True) 
+    print(movies_all_users)
     # transform user vector into hidden feature space
     
     # inverse transformation
@@ -56,7 +58,7 @@ def recommend_with_NMF(movies , rating ):
     # discard seen movies and sort the prediction
     
     # return random_movies  
-    pass
+    #return 'it works'
 
 def recommend_with_user_similarity(user_item_matrix, user_rating, k=5):
     # initiate a new user
