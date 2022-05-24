@@ -38,8 +38,7 @@ def get_movie_frame(method = methods_recommendation, umrT=umrT, mtg = mtg):
         # use pivot to make the matrix of movie rates
         rates =umrT.pivot(index='userId',columns = 'movieId')
         # Split the movie name from movie year and apply it in the matrix
-        mtg['year'] = mtg.title.astype(str).str[-6:]
-        mtg['title_new'] = mtg.title.astype(str).str[:-6]
+        mtg['title_new'] = mtg.title.astype(str).str[:]
         # Try to zip columns with movie names
         #new_columns = dict(zip(df.movieId,df_movie.title))
         rates.rename(columns=dict(zip(mtg["movieId"], mtg["title_new"])), inplace = True)
@@ -93,7 +92,7 @@ def create_user_vector(user_rating):
     # list of the entry movies ratings
     user_rate_entries = list(user_t[0])
     #list of the movie titles of library
-    movies = get_movie_frame()
+    # movies = get_movie_frame(method = 'NMF')
     movie_titles = list(movies.columns)
     # # matches the movies from user with the library
     intended_movies = [match_movie_title(title, movie_titles) for title in user_movie_entries]

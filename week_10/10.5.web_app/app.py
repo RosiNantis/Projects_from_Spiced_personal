@@ -43,14 +43,13 @@ def recommend():
         # movies is the imported DataFrame from the welcome() and user_rating is the user input
         movie_ids = recommend_random(movies, user_rating)
     elif methods[0] == 'NMF':
-        movie_ids = get_movie_frame(method = methods[0] )
-        movie_ids = recommend_with_NMF(movie_ids, user_rating)
+        movies_nmf = get_movie_frame(method = methods[0] )
+        movie_ids = recommend_with_NMF(movies_nmf, user_rating)
     else:
         movie_ids = recommend_with_user_similarity
     # renders the html page as the output of this function
     return  render_template('recommender.html',movie_ids=movie_ids) 
     # 'movie_ids' variable is passed from python file to the html file for accessing it inside the html file
-
 
 # Runs the app (main module)
 if __name__=='__main__':

@@ -48,7 +48,6 @@ def recommend_with_NMF(movies, user_rating, k = 5):
     # initialization - impute missing values    
     new_user = create_user_vector(user_rating)
     movies_all_users = pd.concat([new_user, movies], axis = 0,ignore_index=True) 
-    print(movies_all_users)
     # transform user vector into hidden feature space
     
     # inverse transformation
