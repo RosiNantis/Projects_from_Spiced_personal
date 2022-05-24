@@ -42,7 +42,7 @@ def get_movie_frame(method = methods_recommendation, umrT=umrT, mtg = mtg):
         mtg['title_new'] = mtg.title.astype(str).str[:-6]
         # Try to zip columns with movie names
         #new_columns = dict(zip(df.movieId,df_movie.title))
-        rates.rename(columns=dict(zip(mtg["movieId"], mtg["title_new"])),inplace = True)
+        rates.rename(columns=dict(zip(mtg["movieId"], mtg["title_new"])), inplace = True)
         movies = rates.rating
     elif method == 'user_similarity':
         """
@@ -52,11 +52,11 @@ def get_movie_frame(method = methods_recommendation, umrT=umrT, mtg = mtg):
         """
         umrT_av_rat = umrT.set_index('movieId').groupby(['movieId']).mean()
         # merge the two frames based on the column movieid
-        movies = pd.merge(umrT, mtg, on='movieId')
+        movies_merge = pd.merge(umrT, mtg, on='movieId')
         # merge the two frames based on the column movieid to find average rating
         movieId_rating = pd.merge(umrT_av_rat, mtg, on='movieId')
         # merge movieID, userID, avg(rate), title, genres, accurate(rate)
-        mov = pd.merge(movieId_rating,movies, on='movieId', how = 'left')[["movieId", "rating_x","title_x","userId_y","genres_x","rating_y"]]
+        mov = pd.merge(movieId_rating,movies_merge, on='movieId', how = 'left')[["movieId", "rating_x","title_x","userId_y","genres_x","rating_y"]]
         mov.columns = [["movieId", "rating_avg","title","userId","genres","rating_acc"]]
         # reset index
         movies = mov

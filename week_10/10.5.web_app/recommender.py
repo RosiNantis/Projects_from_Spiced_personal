@@ -34,7 +34,7 @@ def recommend_random(movies, user_rating, k=5):
 
 
 #def recommend_with_NMF(user_item_matrix, user_rating, model, k=5):
-def recommend_with_NMF(movies, user_rating, k =5):
+def recommend_with_NMF(movies, user_rating, k = 5):
     """
     NMF Recommender
     INPUT

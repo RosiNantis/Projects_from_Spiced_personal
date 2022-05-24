@@ -33,23 +33,18 @@ def welcome():
 def recommend():
     #read user input from url/webpage
     print(request.args)
-
     titles = request.args.getlist('title') # taking lists of titles only from user input
     ratings = request.args.getlist('rating') # taking lists of ratings only from user input
     methods = request.args.getlist('methode') # take the method to use
     print(titles,ratings,methods)
     #converting lists of titles and ratings into dict to pass to our recommender model
     user_rating = dict(zip(titles,ratings)) 
-    print(user_rating)
-    print(movies)
     if methods[0] == 'random':
         # movies is the imported DataFrame from the welcome() and user_rating is the user input
         movie_ids = recommend_random(movies, user_rating)
     elif methods[0] == 'NMF':
-        movies = get_movie_frame(method = 'NMF')
-        print('check point one')
-        movie_ids = recommend_with_NMF(movies, user_rating)
-        print('check point two')
+        movie_ids = get_movie_frame(method = methods[0] )
+        movie_ids = recommend_with_NMF(movie_ids, user_rating)
     else:
         movie_ids = recommend_with_user_similarity
     # renders the html page as the output of this function
