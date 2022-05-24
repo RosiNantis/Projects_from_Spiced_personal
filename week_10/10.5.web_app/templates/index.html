@@ -27,7 +27,7 @@
     <form action="/recommend"> <!--After clicking on submit button the routing is done on the /recommend-->
         {% for index in range(1) %}
         <!--name passed inorder to reference the input tag, placeholder writes text inside input field-->
-        <input type="text" name="title" placeholder="Enter movies" list="movies">
+        <input type="text" name="title" placeholder="Enter movies" list="movie">
         <input type="number" name="rating" placeholder="(1-5)" min="1" max="5" required>
         <br>
         {% endfor %}
@@ -49,9 +49,9 @@
         the first input is mapped to the options in datalist 
     movies=movies['title'].tolist() has been passed from render_template of welcome function in app.py-->
 
-    <datalist id="movies">
-        {%for movie in movies %}
-        <option value = "{{movie}}"></option>
+    <datalist id="movie">
+        {%for mov in movie %}
+        <option value = "{{mov}}"></option>
         {% endfor %}
     </datalist>
 

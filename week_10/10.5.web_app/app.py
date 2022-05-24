@@ -20,10 +20,11 @@ app = Flask(__name__)
 @app.route('/')
 def welcome():
     # renders the html page as the output of this function
+
     return render_template(
         'index.html',
         name="Stationary Srirachas 🌶",
-        movies=movies['title'].unique().tolist(),
+        movie=movies['title'].unique().tolist(),
         recommended_method = methods_recommendation,
         )
     # 'movies' variable is passed from python file to the html file for accessing it inside the html file
@@ -32,12 +33,15 @@ def welcome():
 def recommend():
     #read user input from url/webpage
     print(request.args)
+
     titles = request.args.getlist('title') # taking lists of titles only from user input
     ratings = request.args.getlist('rating') # taking lists of ratings only from user input
     methods = request.args.getlist('methode') # take the method to use
     print(titles,ratings,methods)
     #converting lists of titles and ratings into dict to pass to our recommender model
     user_rating = dict(zip(titles,ratings)) 
+    print(user_rating)
+    print(movies)
     if methods[0] == 'random':
         # movies is the imported DataFrame from the welcome() and user_rating is the user input
         movie_ids = recommend_random(movies, user_rating)
