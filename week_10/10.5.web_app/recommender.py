@@ -5,7 +5,8 @@ all algorithms return a list of movieids
 
 import pandas as pd
 import numpy as np
-from utils import lookup_movieId, match_movie_title, model, create_user_vector
+from utils import  match_movie_title, model, create_user_vector, get_movie_frame, clean_nan_numbers
+from sklearn.impute import SimpleImputer
 
 
 def recommend_random(movies, user_rating, k=5):
@@ -32,9 +33,8 @@ def recommend_random(movies, user_rating, k=5):
     return random_movies  
 
 
-
-#def recommend_with_NMF(user_item_matrix, user_rating, model, k=5):
-def recommend_with_NMF(movies, user_rating, k = 5):
+    
+def recommend_with_NMF(movies ,new_user, model=model, k=5):
     """
     NMF Recommender
     INPUT
@@ -44,20 +44,34 @@ def recommend_with_NMF(movies, user_rating, k = 5):
     OUTPUT
     - a list of movieIds
     """
-    
-    # initialization - impute missing values    
-    new_user = create_user_vector(user_rating)
-    movies_all_users = pd.concat([new_user, movies], axis = 0,ignore_index=True) 
-    # transform user vector into hidden feature space
-    
-    # inverse transformation
+    table = pd.concat([new_user, movies], axis = 0,ignore_index=True) 
+    # ------------------------------------------------------------#  
+    #  dEal with missing values with Imputer
+    packet= clean_nan_numbers(table)
+    clean_table=packet[0]
+    imputer = packet[1]
 
-    # build a dataframe
+    # ------------------------------------------------------------#  
+    # take Q and P matrices
+    Q = model.components_
+    P = model.transform(clean_table)
+    # ------------------------------------------------------------#  
+    # locate new user and give an array of rates with Imputed values
+    user = table.iloc[0,:].values
+    user = user.reshape(1, -1)
+    # ------------------------------------------------------------#
+    # predict user P, R values
+    user_clean = imputer.transform(user)
+    user_P = model.transform(user_clean) 
+    user_R = np.dot(user_P,Q)
+    # ------------------------------------------------------------#
+    # remove seen movies & give top n recommendations   
+    recommendation = pd.DataFrame({'user_input':user[0], 'predicted_ratings':user_R[0]}, index = table.columns)
+    recommendation = recommendation[recommendation['user_input'].isna()].sort_values(by = 'predicted_ratings', ascending= False)
+    NMF_movies = list(recommendation.iloc[:k].index)
+    return NMF_movies
 
-    # discard seen movies and sort the prediction
-    
-    # return random_movies  
-    #return 'it works'
+
 
 def recommend_with_user_similarity(user_item_matrix, user_rating, k=5):
     # initiate a new user

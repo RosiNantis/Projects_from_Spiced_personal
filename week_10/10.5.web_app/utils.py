@@ -13,6 +13,7 @@ import pandas as pd
 import numpy as np
 from fuzzywuzzy import process
 import pickle
+from sklearn.impute import SimpleImputer
 
 
 #movies = pd.read_csv('movies_ratings.csv', index_col=0)
@@ -24,7 +25,7 @@ movies = pd.merge(umrT, mtg, on='movieId')
 methods_recommendation = ['random','NMF','user_similarity']
 
 # load model
-with open('static/model5.pkl', 'rb') as f:
+with open('../10.3.collaborative_filtering/model6_8h.pkl', 'rb') as f:
     model= pickle.load(f)
 
 
@@ -77,14 +78,13 @@ def print_movie_titles(movie_titles):
         print(f'            > {movie_id}')
 
 
-def create_user_vector(user_rating):
+def create_user_vector(user_rating,movies):
     """
     Convert dict of user_ratings to a user_vector
     """       
     ##### add a new user for the NMF method with movies and ratings and NaN else #######
 
-    # ------------------------------------------------------------ #
-    movies= get_movie_frame(method = 'NMF') 
+    # ------------------------------------------------------------ # 
     user = pd.DataFrame(user_rating, index=[0])
     user_t = user.T.reset_index()
     # list of the entry movies
@@ -118,3 +118,10 @@ def lookup_movieId(movies, movieId):
     movie_title = list(movies[boolean]["title"])[0]
     return movie_title
 
+def clean_nan_numbers(data):
+    """
+    clean a data frame from NaN by using the mean value
+    """
+    imputer = SimpleImputer(strategy = 'mean') # add the NaN with the average of movie recommendations 
+    Rtrue = imputer.fit_transform(data)
+    return Rtrue, imputer

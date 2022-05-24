@@ -1,7 +1,7 @@
 import re
 from recommender import recommend_random, recommend_with_NMF, recommend_with_user_similarity
 from flask import Flask,render_template,request
-from utils import movies, methods_recommendation, get_movie_frame
+from utils import movies, methods_recommendation, get_movie_frame, create_user_vector
 
 # # example input of web application
 # user_rating = {
@@ -43,8 +43,9 @@ def recommend():
         # movies is the imported DataFrame from the welcome() and user_rating is the user input
         movie_ids = recommend_random(movies, user_rating)
     elif methods[0] == 'NMF':
-        movies_nmf = get_movie_frame(method = methods[0] )
-        movie_ids = recommend_with_NMF(movies_nmf, user_rating)
+        movies_nmf = get_movie_frame(method = methods[0])
+        new_user = create_user_vector(user_rating,movies_nmf)
+        movie_ids = recommend_with_NMF(movies_nmf, new_user)
     else:
         movie_ids = recommend_with_user_similarity
     # renders the html page as the output of this function
