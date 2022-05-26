@@ -46,7 +46,9 @@ def recommend():
         movies_nmf = get_movie_frame(method = methods[0])
         new_user = create_user_vector(user_rating,movies_nmf)
         movie_ids = recommend_with_NMF(movies_nmf, new_user)
-    else:
+    elif methods[0] == 'user_similarity':
+        movies_cs= get_movie_frame(method = methods[0])
+        
         movie_ids = recommend_with_user_similarity
     # renders the html page as the output of this function
     return  render_template('recommender.html',movie_ids=movie_ids) 
