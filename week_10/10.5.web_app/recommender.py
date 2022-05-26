@@ -44,6 +44,7 @@ def recommend_with_NMF(movies ,new_user, model=model, k=5):
     OUTPUT
     - a list of movieIds
     """
+    # cncatenate new user with database
     table = pd.concat([new_user, movies], axis = 0,ignore_index=True) 
     # ------------------------------------------------------------#  
     #  dEal with missing values with Imputer
