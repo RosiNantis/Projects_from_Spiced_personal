@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 from utils import  match_movie_title, model, create_user_vector, get_movie_frame, clean_nan_numbers
 from sklearn.impute import SimpleImputer
+from sklearn.metrics.pairwise import cosine_similarity
 
 
 def recommend_random(movies, user_rating, k=5):
@@ -74,13 +75,45 @@ def recommend_with_NMF(movies ,new_user, model=model, k=5):
 
 
 
-def recommend_with_user_similarity(user_item_matrix, user_rating, k=5):
-    # initiate a new user
+def recommend_with_user_similarity(new_user, movies, k=5):
+   
+    # combine new user with database
+    tabl = pd.concat([new_user, movies], axis = 0,ignore_index=True) 
+    # Drop duplicate movies from data frame
+    table = tabl.T.groupby(level=0).first().T
+    # fill in NaN values with zeros
+    movie_CS_u = table.fillna(0)
+    # We can turn this into a dataframe:
+    cos_sim_table = pd.DataFrame(cosine_similarity(movie_CS_u),index=movie_CS_u.index, columns = movie_CS_u.index)
+    # use the transposed version of R
+    R_t = movie_CS_u.T
+    # create a list of unseen movies for this user
+    unseen_movies = list(R_t.loc[~(R_t!=0).all(axis=1)].index)
+    # Create a list of top 3 similar user (nearest neighbours)
+    neighbours = list(cos_sim_table.iloc[0].sort_values(ascending=False).index[1:4])
+    # create the recommendation (predicted/rated movie)
+    predicted_ratings_movies = []
+    print('<-------check-------->')
+    for idx, movie in enumerate(unseen_movies):
+        # we check the users who watched the movie
+        people_who_have_seen_the_movie = list(R_t.columns[R_t.loc[movie] > 0])
 
 
+        num = 0
+        den = 0
+        for user in neighbours:
+            # if this person has seen the movie
+            if user in people_who_have_seen_the_movie:
+            #  we want extract the ratings and similarities
+                rating = R_t.loc[movie,user]
+                similarity = cos_sim_table.loc[0,user]
+                num += rating*similarity
+                den += similarity
 
+        if den != 0:
+            predicted_ratings = num/den
+            predicted_ratings_movies.append([int(round(predicted_ratings,0)),movie])
 
-    # return random_movies  
-    pass
-
-
+    def_pred = pd.DataFrame(predicted_ratings_movies,columns= ['rating', 'movie']).sort_values("rating", ascending=False)
+    CS_movies = list(def_pred.iloc[:3].movie)
+    return CS_movies

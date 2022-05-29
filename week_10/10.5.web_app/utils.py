@@ -66,11 +66,7 @@ def get_movie_frame(method = methods_recommendation, umrT=umrT, mtg = mtg):
         """
         # use pivot to make the matrix of movie rates
         rates =umrT.pivot(index='userId',columns = 'movieId')
-        # Split the movie name from movie year and apply it in the matrix
-        mtg['title_new'] = mtg.title.astype(str).str[:]
-        # Try to zip columns with movie names
-        #new_columns = dict(zip(df.movieId,df_movie.title))
-        rates.rename(columns=dict(zip(mtg["movieId"], mtg["title_new"])), inplace = True)
+        rates.rename(columns=dict(zip(mtg["movieId"], mtg["title"])),inplace = True)
         movies = rates.rating
     return movies
 

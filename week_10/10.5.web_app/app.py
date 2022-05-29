@@ -48,8 +48,8 @@ def recommend():
         movie_ids = recommend_with_NMF(movies_nmf, new_user)
     elif methods[0] == 'user_similarity':
         movies_cs= get_movie_frame(method = methods[0])
-        
-        movie_ids = recommend_with_user_similarity
+        new_user = create_user_vector(user_rating,movies_cs)
+        movie_ids = recommend_with_user_similarity(new_user, movies_cs)
     # renders the html page as the output of this function
     return  render_template('recommender.html',movie_ids=movie_ids) 
     # 'movie_ids' variable is passed from python file to the html file for accessing it inside the html file
