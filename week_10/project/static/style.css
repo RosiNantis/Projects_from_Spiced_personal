@@ -7,7 +7,7 @@ body{
     background-color: lightblue;
 
     /* To put the background image covering the entire webpage */
-    background-image: url('background1.jpg');
+    background-image: url('background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

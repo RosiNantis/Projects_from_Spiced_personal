@@ -1,0 +1,60 @@
+<!--Just type ! and press Enter to get a prefilled skeletal code of html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome Page for Movie Recommendation </title> <!--Whatever is written under title is dispalyed on the tab of the webpage-->
+    <link rel="stylesheet" href="/static/style.css"/><!--linking css style sheet to html-->
+</head>
+
+
+<body>
+    <h1> Movie time: {{name}} </h1> <!--Passing the jinja template, the value of name is passed from python file to html-->
+    <img src="static/logo.svg"/> <!--Placing an image in html-->
+
+    <!-- 
+    <p>Place the method of recommendation</p>
+    <form action="/recommend"> 
+        <input type="text" name="methods" placeholder="Enter method of recommendation" list="recommended_method">
+    </form>  -->
+
+    <p>Please rate your movie</p>
+    <!--Creating a form for the user to input values through the webpage-->
+    <form action="/recommend"> <!--After clicking on submit button the routing is done on the /recommend-->
+        {% for index in range(4) %}
+        <!--name passed inorder to reference the input tag, placeholder writes text inside input field-->
+        <input type="text" name="title" placeholder="Enter movies" list="movie">
+        <input type="number" name="rating" placeholder="(1-5)" min="1" max="5" required>
+        <br>
+        {% endfor %}
+        <p>Place the method</p>
+        <input type="text" name="methode" placeholder="Enter method of recommendation" list="recommended_method">
+        <br>
+        <button type="submit">Show Recommendation</button>
+
+    </form>   
+
+
+    <datalist id="recommended_method">
+        {%for meth in recommended_method %}
+        <option value = "{{meth}}"></option>
+        {% endfor %}
+    </datalist>
+
+    <!--For having the dropdown menu for choosing movies, list='movies' in
+        the first input is mapped to the options in datalist 
+    movies=movies['title'].tolist() has been passed from render_template of welcome function in app.py-->
+
+    <datalist id="movie">
+        {%for mov in movie %}
+        <option value = "{{mov}}"></option>
+        {% endfor %}
+    </datalist>
+
+
+</body>
+
+</html>
