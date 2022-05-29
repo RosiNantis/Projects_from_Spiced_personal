@@ -11,7 +11,9 @@ UTILS
 """
 import pandas as pd
 import numpy as np
-from fuzzywuzzy import process
+#from fuzzywuzzy import process
+# rapidfuzz package is a faster version of fuzzywuzzy
+from rapidfuzz import process
 import pickle
 from sklearn.impute import SimpleImputer
 

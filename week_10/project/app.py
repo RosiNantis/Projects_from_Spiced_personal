@@ -23,7 +23,7 @@ def welcome():
 
     return render_template(
         'index.html',
-        name="Stationary Srirachas 🌶",
+        name="Get yourself comfortable",
         movie=movies['title'].unique().tolist(),
         recommended_method = methods_recommendation,
         )

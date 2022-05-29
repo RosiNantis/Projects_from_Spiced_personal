@@ -12,28 +12,39 @@
 
 
 <body>
-    <h1> Movie time: {{name}} </h1> <!--Passing the jinja template, the value of name is passed from python file to html-->
-    <img src="static/logo.svg"/> <!--Placing an image in html-->
-
+    <h1> {{name}} </h1> <!--Passing the jinja template, the value of name is passed from python file to html-->
+    <img src="static/logo1.jpg"/> <!--Placing an image in html-->
+    
     <!-- 
     <p>Place the method of recommendation</p>
     <form action="/recommend"> 
         <input type="text" name="methods" placeholder="Enter method of recommendation" list="recommended_method">
     </form>  -->
 
-    <p>Please rate your movie</p>
+    <p>Please rate your movies</p>
     <!--Creating a form for the user to input values through the webpage-->
     <form action="/recommend"> <!--After clicking on submit button the routing is done on the /recommend-->
         {% for index in range(4) %}
         <!--name passed inorder to reference the input tag, placeholder writes text inside input field-->
-        <input type="text" name="title" placeholder="Enter movies" list="movie">
-        <input type="number" name="rating" placeholder="(1-5)" min="1" max="5" required>
+        <input type="text" name="title" placeholder="Enter movie" list="movie" required>
+        <br>
+        <input type="number" name="rating" value = "3" placeholder="(1-5)" min="1" max="5" required>
         <br>
         {% endfor %}
         <p>Place the method</p>
-        <input type="text" name="methode" placeholder="Enter method of recommendation" list="recommended_method">
+        <input type="text" name="methode" placeholder="method" list="recommended_method">
         <br>
         <button type="submit">Show Recommendation</button>
+        <!--script to add ENTER as a submit button as well-->
+        <script>
+            var input = document.getElementById("myInput");
+            input.addEventListener("keypress", function(event) {
+              if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("myBtn").click();
+              }
+            });
+            </script>
 
     </form>   
 

@@ -2,6 +2,7 @@ flask
 pandas
 numpy
 fuzzywuzzy
+rapidfuzz
 gunicorn
 pickle
 sklearn
