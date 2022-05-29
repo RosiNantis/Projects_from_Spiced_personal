@@ -1,6 +1,7 @@
-Flask
+flask
 pandas
 numpy
 fuzzywuzzy
 gunicorn
 pickle
+sklearn

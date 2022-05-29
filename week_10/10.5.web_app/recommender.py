@@ -76,29 +76,34 @@ def recommend_with_NMF(movies ,new_user, model=model, k=5):
 
 
 def recommend_with_user_similarity(new_user, movies, k=5):
-   
+    # ------------------------------------------------------------#  
     # combine new user with database
     tabl = pd.concat([new_user, movies], axis = 0,ignore_index=True) 
+    # ------------------------------------------------------------#  
     # Drop duplicate movies from data frame
     table = tabl.T.groupby(level=0).first().T
+    # ------------------------------------------------------------#  
     # fill in NaN values with zeros
     movie_CS_u = table.fillna(0)
+    # ------------------------------------------------------------#  
     # We can turn this into a dataframe:
     cos_sim_table = pd.DataFrame(cosine_similarity(movie_CS_u),index=movie_CS_u.index, columns = movie_CS_u.index)
+    # ------------------------------------------------------------#  
     # use the transposed version of R
-    R_t = movie_CS_u.T
+    R_t = movie_CS_u.T.astype(int)
+    # ------------------------------------------------------------#  
     # create a list of unseen movies for this user
     unseen_movies = list(R_t.loc[~(R_t!=0).all(axis=1)].index)
+    # ------------------------------------------------------------#  
     # Create a list of top 3 similar user (nearest neighbours)
     neighbours = list(cos_sim_table.iloc[0].sort_values(ascending=False).index[1:4])
     # create the recommendation (predicted/rated movie)
+    # ------------------------------------------------------------#  
     predicted_ratings_movies = []
-    print('<-------check-------->')
     for idx, movie in enumerate(unseen_movies):
         # we check the users who watched the movie
+
         people_who_have_seen_the_movie = list(R_t.columns[R_t.loc[movie] > 0])
-
-
         num = 0
         den = 0
         for user in neighbours:
@@ -115,5 +120,5 @@ def recommend_with_user_similarity(new_user, movies, k=5):
             predicted_ratings_movies.append([int(round(predicted_ratings,0)),movie])
 
     def_pred = pd.DataFrame(predicted_ratings_movies,columns= ['rating', 'movie']).sort_values("rating", ascending=False)
-    CS_movies = list(def_pred.iloc[:3].movie)
+    CS_movies = list(def_pred.iloc[:k].movie)
     return CS_movies
