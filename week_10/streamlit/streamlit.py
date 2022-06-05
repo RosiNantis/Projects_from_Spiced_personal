@@ -1,4 +1,4 @@
-#import std libraries
+ #import std libraries
 from cv2 import FileStorage_INSIDE_MAP
 import pandas as pd
 import numpy as np
@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 # Write a title
-st.title('Data Explorer App')
+st.title('Welcome to the Mushroom Classifier Application ')
 # Write data taken from https://allisonhorst.github.io/palmerpenguins/
 st.write('A **simple** *app* to explore `penguin` [data](https://allisonhorst.github.io/palmerpenguins/) :flipper: [:penguin:](https://share.streamlit.io/streamlit/emoji-shortcodes)')
 # Put image https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/man/figures/lter_penguins.png
