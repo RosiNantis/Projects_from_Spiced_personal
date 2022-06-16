@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mush-Room Identifier  </title> 
+    <link rel="stylesheet" href="../static/style_first_page.css"/><!--linking css style sheet to html-->
+    <link rel="icon" href="data:,">
+</head>
+
+
+<body>
+<header>
+    <img class="image-icon" icon="68" src="../static/icons8-pilze-64.png"></img>
+    <h2>Mushroom Classification</h2>
+</header>
+<section class="fullWidthAndHeight">
+<nav class="blur">
+<div class="form-container">
+    <div class="text-wiki">
+        <h3> Wikipedia summary </h3>
+        <p id = "myText"> {{wiki_text}} </p>
+    </div>
+    <div class="text-wiki">
+        <h3> Abstract NLP </h3>
+        <p class="text_abstract" id = "myText"> {{nlp_abstract}}</p>
+    </div>
+    <div class="text-wiki">
+        <p> Wiki url. </p>
+        <div style="text-align: center;font-family: fantasy , sans-serif;overflow:auto;font-size: 30px;">
+        <a href={{wiki_url}}> <p> - {{prediction[0]}} - </p> </a>
+        </div>
+    </div>
+</div>
+</nav>
+<article>
+<div class="images" >
+        <h2 >Side-by-Side Image Gallery</h2>
+        <table >
+            <tr>
+			<figure class="figure">
+    <img class="image-element" src={{image_directory}} alt="test" width="350" height="350">
+    <figcaption class="figure-caption">Test image</figcaption>
+</figure>
+                   
+            </tr>
+            <tr>         
+        <figure class="figure">
+            <a href={{wiki_url}}>
+                <img  class="image-element" src={{wiki_image_url}}  alt="wiki" width="350" height="350">
+            </a>    
+			<figcaption class="figure-caption">Wiki Prediction</figcaption>
+			</figure>
+            </tr>
+        </table>
+</div>
+<div class="Tables" >
+    <h2>Prediction Table</h2>
+	<br>
+    <table class="text-table blur" >
+	<tr>
+	<th class="table-header"><u>Fungus Type</u></th>
+	<th class="table-header"><u>Prediction (%)</u></th>
+	</tr>
+        <tr>
+		 <td class="table-cell">{{result['image_class'][0]}}</td>
+		 <td class="table-cell">{{result['probability(%)'][0]}}</td>
+        </tr>
+		<tr>
+        <td class="table-cell">{{result['image_class'][1]}}</td>
+        <td class="table-cell">{{result['probability(%)'][1]}}</td>
+        </tr>
+		<tr>
+        <td class="table-cell">{{result['image_class'][2]}}</td>
+        <td class="table-cell">{{result['probability(%)'][2]}}</td>
+        </tr>
+		<tr>
+        <td class="table-cell">{{result['image_class'][3]}}</td>
+        <td class="table-cell">{{result['probability(%)'][3]}}</td>
+        </tr>
+	
+    </table>
+
+</div>
+<form action="/">
+<div class = "back" >
+	<button class="nav-button">
+    <a href='/'>Go Back to main page</a>
+	</button>
+</div>
+</form>
+</article>
+</section>
+<footer style="position: fixed; height: 1.4cm;">
+        <p class="copyright">Copyright &copy; 2022 Mush-Room app</p>
+</footer>
+    
+</body>
+</html>
